@@ -1,0 +1,12 @@
+# Configuration profile for vision_ep02 (following reference1004 / Nam Mộc flow)
+tts:
+  provider: zerotts
+  voice: baotrang
+subtitle:
+  enabled: false
+render:
+  fps: 30
+  picture_style:
+    enabled: true
+video:
+  preset: veryfast

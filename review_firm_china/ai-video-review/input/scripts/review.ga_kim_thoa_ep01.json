@@ -1,0 +1,3934 @@
+{
+  "title": "Gả Kim Thoa Tập 1 — Kèo Thơm Xung Hỷ Và Cú Lội Ngược Dòng Của Nàng Đổ Dạ Hương",
+  "source_video": "input/videos/ga_kim_thoa_ep01.mp4",
+  "segments": [
+    {
+      "id": 1,
+      "narration": [
+        {
+          "id": "u1_1",
+          "text": "Vừa mở màn, siêu phẩm cổ trang gia đấu Gả Kim Thoa đã ném khán giả vào ngay bầu không khí nhung lụa xa hoa nhưng ngập tràn mưu mô toan tính của Thừa An Bá phủ.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u1_2",
+          "text": "Tại khuê phòng lộng lẫy, nhị tiểu thư Quân Đại kiêu kỳ đang ngồi trước gương đồng, tay mân mê chiếc trâm vàng nạm ngọc gia truyền với nụ cười tự mãn vô cùng đắc ý.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u1_3",
+          "text": "Cứ ngỡ nàng ta sắp sửa danh chính ngôn thuận bước chân vào hào môn danh giá bậc nhất kinh thành để mặc sức hưởng trọn vinh hoa phú quý muôn đời.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 0.0,
+      "source_end": 44.53,
+      "visual_intent": "Diễn biến tập 1 đoạn 0s-45s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1.0,
+          "source_end": 13.76,
+          "weight": 1.0,
+          "speech_unit_id": "u1_1"
+        },
+        {
+          "source_start": 15.18,
+          "source_end": 27.94,
+          "weight": 1.0,
+          "speech_unit_id": "u1_2"
+        },
+        {
+          "source_start": 29.35,
+          "source_end": 42.11,
+          "weight": 1.0,
+          "speech_unit_id": "u1_3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "narration": [
+        {
+          "id": "u2_1",
+          "text": "Nhưng đời đúng là không như là mơ, tin tức sét đánh từ tiền sảnh truyền vào khiến nụ cười trên môi nàng tiểu thư lập tức tắt ngúm trong một nốt nhạc ngắn ngủi.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u2_2",
+          "text": "Hôn ước từ thuở ấu thơ của nàng đúng là môn đăng hộ đối thật sự, đối tượng kết duyên chính là Lục Trạc, vị thế tử phủ Anh Quốc Công lừng lẫy uy phong.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u2_3",
+          "text": "Ngặt nỗi chàng thế tử vừa đánh trận trở về thì chẳng may trúng tên độc, hiện đang nằm bất tỉnh nhân sự, hơi thở thoi thóp mong manh như ngọn đèn dầu trước cơn bão lớn.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 44.53,
+      "source_end": 89.06,
+      "visual_intent": "Diễn biến tập 1 đoạn 45s-89s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 45.53,
+          "source_end": 58.29,
+          "weight": 1.0,
+          "speech_unit_id": "u2_1"
+        },
+        {
+          "source_start": 59.71,
+          "source_end": 72.47,
+          "weight": 1.0,
+          "speech_unit_id": "u2_2"
+        },
+        {
+          "source_start": 73.88,
+          "source_end": 86.64,
+          "weight": 1.0,
+          "speech_unit_id": "u2_3"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "narration": [
+        {
+          "id": "u3_1",
+          "text": "Phủ Anh Quốc Công thấy đứa con trai độc nhất sắp sửa đi gặp diêm vương liền nảy ra sáng kiến tổ chức đám cưới gấp gáp để xung hỷ xua đuổi tà ma xui xẻo.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u3_2",
+          "text": "Nói toạc móng heo ra là muốn rước Quân Đại về để nếu thế tử có mệnh hệ nào thì nàng sẽ lập tức trở thành góa phụ tiết hạnh giữ trọn trinh tiết suốt cả cuộc đời.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u3_3",
+          "text": "Nàng tiểu thư kiêu kỳ cành vàng lá ngọc nghe xong thì giãy nảy như đỉa phải vôi, một mực cự tuyệt bước chân vào nấm mồ hôn nhân định mệnh đầy tăm tối này.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 89.06,
+      "source_end": 133.59,
+      "visual_intent": "Diễn biến tập 1 đoạn 89s-134s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 90.06,
+          "source_end": 102.82,
+          "weight": 1.0,
+          "speech_unit_id": "u3_1"
+        },
+        {
+          "source_start": 104.24,
+          "source_end": 117.0,
+          "weight": 1.0,
+          "speech_unit_id": "u3_2"
+        },
+        {
+          "source_start": 118.41,
+          "source_end": 131.17,
+          "weight": 1.0,
+          "speech_unit_id": "u3_3"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "narration": [
+        {
+          "id": "u4_1",
+          "text": "Nàng gào thét long trời lở đất trong phòng, đập phá tan tành đồ đạc và tuyên bố thẳng thừng rằng thà cạo đầu làm ni cô chứ quyết không lấy một khúc gỗ mục bất động.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u4_2",
+          "text": "Thế nhưng hôn ước hoàng gia là do Lão tổ tông và triều đình đích thân định đoạt, đâu phải thứ muốn quỵt là quỵt được dễ dàng như ăn một chiếc kẹo đường.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u4_3",
+          "text": "Trong lúc tranh cãi nảy lửa đến nghẹt thở với tỳ nữ thân cận, chiếc trâm cài tóc vàng ròng đắt giá bất ngờ tuột khỏi tay rơi choảng xuống nền sàn gạch lạnh lẽo.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 133.59,
+      "source_end": 178.12,
+      "visual_intent": "Diễn biến tập 1 đoạn 134s-178s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 134.59,
+          "source_end": 147.35,
+          "weight": 1.0,
+          "speech_unit_id": "u4_1"
+        },
+        {
+          "source_start": 148.77,
+          "source_end": 161.53,
+          "weight": 1.0,
+          "speech_unit_id": "u4_2"
+        },
+        {
+          "source_start": 162.94,
+          "source_end": 175.7,
+          "weight": 1.0,
+          "speech_unit_id": "u4_3"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "narration": [
+        {
+          "id": "u5_1",
+          "text": "Đầu trâm sắc nhọn vấy lên một vệt máu đỏ tươi chói mắt, báo hiệu chuỗi sóng gió quyền mưu kinh thiên động địa sắp sửa đổ ập xuống cả gia tộc.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u5_2",
+          "text": "Bị dồn vào chân tường không lối thoát, Quân Đại bắt đầu vận dụng hết công suất chất xám trong đầu để ráo riết tìm đường thoát thân cho bằng được.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u5_3",
+          "text": "Và rồi, một kế hoạch tráo mận đổi đào điên rồ và táo bạo nhất chốn kinh kỳ đã được nàng ta âm thầm vạch ra từng đường đi nước bước trong bóng tối.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 178.12,
+      "source_end": 222.66,
+      "visual_intent": "Diễn biến tập 1 đoạn 178s-223s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 179.12,
+          "source_end": 191.88,
+          "weight": 1.0,
+          "speech_unit_id": "u5_1"
+        },
+        {
+          "source_start": 193.3,
+          "source_end": 206.06,
+          "weight": 1.0,
+          "speech_unit_id": "u5_2"
+        },
+        {
+          "source_start": 207.48,
+          "source_end": 220.24,
+          "weight": 1.0,
+          "speech_unit_id": "u5_3"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "narration": [
+        {
+          "id": "u6_1",
+          "text": "Rời khỏi khu phủ đệ nguy nga tráng lệ, ống kính máy quay lập tức chuyển cảnh sang một góc ngõ hẻm nghèo nàn, lầy lội và hôi hám ở khu vực ngoại thành xa xôi.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u6_2",
+          "text": "Tại đây, một cô gái trẻ trong bộ đồ vải thô rách rưới đang còng lưng gánh từng thùng dạ hương nặng trĩu đi đổ thuê kiếm từng đồng bạc cắc mưu sinh qua ngày.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u6_3",
+          "text": "Dù mặt mũi lấm lem bùn đất và phải làm công việc bần hàn nhất thiên hạ, nhưng đôi mắt trong veo của cô gái vẫn sáng ngời và tràn đầy nghị lực phi thường.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 222.66,
+      "source_end": 267.19,
+      "visual_intent": "Diễn biến tập 1 đoạn 223s-267s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 223.66,
+          "source_end": 236.42,
+          "weight": 1.0,
+          "speech_unit_id": "u6_1"
+        },
+        {
+          "source_start": 237.84,
+          "source_end": 250.6,
+          "weight": 1.0,
+          "speech_unit_id": "u6_2"
+        },
+        {
+          "source_start": 252.01,
+          "source_end": 264.77,
+          "weight": 1.0,
+          "speech_unit_id": "u6_3"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "narration": [
+        {
+          "id": "u7_1",
+          "text": "Cô nàng này tên gọi là A Sửu, cái tên xấu xí người ta đặt cho để mong dễ nuôi, nhưng thực chất dung mạo ẩn sau lớp nhọ nồi lại là một tuyệt sắc giai nhân nghiêng nước nghiêng thành.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u7_2",
+          "text": "Điều kỳ lạ hơn nữa là nếu rửa sạch lớp bùn đất lem luốc, A Sửu sở hữu ngũ quan thanh tú giống nhị tiểu thư Quân Đại như hai giọt nước đúc ra từ cùng một khuôn mẫu.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u7_3",
+          "text": "Khán giả xem phim đến đây là ngửi thấy ngay mùi vị của thân thế tráo con từ thuở mới lọt lòng vô cùng quen thuộc của dòng phim gia đấu kinh điển rồi.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 267.19,
+      "source_end": 311.72,
+      "visual_intent": "Diễn biến tập 1 đoạn 267s-312s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 268.19,
+          "source_end": 280.95,
+          "weight": 1.0,
+          "speech_unit_id": "u7_1"
+        },
+        {
+          "source_start": 282.37,
+          "source_end": 295.13,
+          "weight": 1.0,
+          "speech_unit_id": "u7_2"
+        },
+        {
+          "source_start": 296.54,
+          "source_end": 309.3,
+          "weight": 1.0,
+          "speech_unit_id": "u7_3"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "narration": [
+        {
+          "id": "u8_1",
+          "text": "A Sửu cày cuốc ngày đêm không quản mưa nắng không phải vì đam mê lao động công ích, mà vì người mẹ nuôi đang mắc bạo bệnh hiểm nghèo nằm liệt giường trong túp lều rách nát.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u8_2",
+          "text": "Tiền thuốc men đắt đỏ mỗi ngày như muối bỏ bể, chủ tiệm thuốc liên tục cho người đến xiết nợ khiến hai mẹ con rơi vào bước đường cùng tăm tối không lối thoát.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u8_3",
+          "text": "Đúng vào thời khắc tuyệt vọng nhất của số phận thì một cỗ xe ngựa sang trọng lộng lẫy bất ngờ dừng lại ngay trước đầu con hẻm ổ chuột tối tăm hôi hám.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 311.72,
+      "source_end": 356.25,
+      "visual_intent": "Diễn biến tập 1 đoạn 312s-356s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 312.72,
+          "source_end": 325.48,
+          "weight": 1.0,
+          "speech_unit_id": "u8_1"
+        },
+        {
+          "source_start": 326.9,
+          "source_end": 339.66,
+          "weight": 1.0,
+          "speech_unit_id": "u8_2"
+        },
+        {
+          "source_start": 341.07,
+          "source_end": 353.83,
+          "weight": 1.0,
+          "speech_unit_id": "u8_3"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "narration": [
+        {
+          "id": "u9_1",
+          "text": "Quân Đại kiêu kỳ bước xuống xe, đưa khăn tay che mũi nhìn quanh với vẻ khinh bỉ tột cùng, nhưng khi nhìn thẳng vào mặt A Sửu thì ả ta chết trân tại chỗ không thốt nên lời.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u9_2",
+          "text": "Sự giống nhau đến mức rợn người giữa hai số phận đối nghịch đã chứng minh cho ả thấy rằng chiếc phao cứu sinh duy nhất của đời mình đã xuất hiện đúng lúc.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u9_3",
+          "text": "Quân Đại lập tức cho thị vệ đuổi hết dân tình xung quanh rồi kéo xộc A Sửu vào căn nhà tranh dột nát để bàn bạc một phi vụ làm ăn lớn làm thay đổi cả cuộc đời.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 356.25,
+      "source_end": 400.78,
+      "visual_intent": "Diễn biến tập 1 đoạn 356s-401s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 357.25,
+          "source_end": 370.01,
+          "weight": 1.0,
+          "speech_unit_id": "u9_1"
+        },
+        {
+          "source_start": 371.43,
+          "source_end": 384.19,
+          "weight": 1.0,
+          "speech_unit_id": "u9_2"
+        },
+        {
+          "source_start": 385.6,
+          "source_end": 398.36,
+          "weight": 1.0,
+          "speech_unit_id": "u9_3"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "narration": [
+        {
+          "id": "u10_1",
+          "text": "Không vòng vo tam quốc dài dòng, nàng thiên kim ném ngay một bọc bạc trắng lấp lánh lên chiếc bàn gỗ ọp ẹp trước ánh mắt ngỡ ngàng tròn xoe của cô gái nghèo.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u10_2",
+          "text": "Ả bảo rằng chỉ cần A Sửu chịu đóng giả làm nhị tiểu thư bước lên kiệu hoa gả sang phủ Anh Quốc Công xung hỷ, toàn bộ tiền thuốc thang và cuộc sống của mẹ sẽ được chu cấp trọn đời.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u10_3",
+          "text": "Ngược lại, nếu dám từ chối hoặc để lộ nửa lời ra ngoài, cả hai mẹ con sẽ không còn đất dung thân ở cái kinh thành đầy rẫy tai vách mạch rừng và cạm bẫy chết người này.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 400.78,
+      "source_end": 445.31,
+      "visual_intent": "Diễn biến tập 1 đoạn 401s-445s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 401.78,
+          "source_end": 414.54,
+          "weight": 1.0,
+          "speech_unit_id": "u10_1"
+        },
+        {
+          "source_start": 415.96,
+          "source_end": 428.72,
+          "weight": 1.0,
+          "speech_unit_id": "u10_2"
+        },
+        {
+          "source_start": 430.13,
+          "source_end": 442.89,
+          "weight": 1.0,
+          "speech_unit_id": "u10_3"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "narration": [
+        {
+          "id": "u11_1",
+          "text": "A Sửu cầm thỏi bạc nặng trịch trên tay mà cõi lòng trĩu nặng như đeo đá tảng, nàng thừa hiểu bước chân vào chốn hào môn sâu như biển chẳng khác nào tự nhảy vào miệng cọp dữ.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u11_2",
+          "text": "Nhưng khi quay đầu nhìn mẹ nuôi đang ho sặc sụa từng cơn đau đớn trên manh chiếu rách, nàng biết mình không còn bất kỳ sự lựa chọn nào khác ngoài việc đem tính mạng ra đánh cược.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u11_3",
+          "text": "Nàng ngẩng cao đầu dứt khoát đồng ý nhận lời giao dịch định mệnh, chính thức mở ra một bước ngoặt đổi đời đầy chông gai bão táp nhưng cũng vô cùng hiển hách.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 445.31,
+      "source_end": 489.84,
+      "visual_intent": "Diễn biến tập 1 đoạn 445s-490s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 446.31,
+          "source_end": 459.07,
+          "weight": 1.0,
+          "speech_unit_id": "u11_1"
+        },
+        {
+          "source_start": 460.49,
+          "source_end": 473.25,
+          "weight": 1.0,
+          "speech_unit_id": "u11_2"
+        },
+        {
+          "source_start": 474.66,
+          "source_end": 487.42,
+          "weight": 1.0,
+          "speech_unit_id": "u11_3"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "narration": [
+        {
+          "id": "u12_1",
+          "text": "Khi màn đêm đen kịt buông xuống kinh thành, một cỗ xe ngựa bí mật lặng lẽ đưa A Sửu luồn qua cửa sau hiểm hóc để tiến thẳng vào nội viện thâm sâu của Thừa An Bá phủ.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u12_2",
+          "text": "Vừa cởi bỏ bộ đồ thô kệch lấm lem và tắm gội sạch sẽ bằng nước hoa hồng, dung nhan thực sự của nàng lộ ra khiến ngay cả đám tỳ nữ thân cận của Quân Đại cũng phải giật mình thảng thốt.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u12_3",
+          "text": "Quân Đại đứng bên cạnh nhìn ngắm bản sao hoàn mỹ của mình mà vừa mừng rỡ vừa lo sợ, trong lòng dấy lên nỗi ghen ghét đố kỵ khó tả trước nét đẹp thanh thuần thoát tục của đối phương.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 489.84,
+      "source_end": 534.38,
+      "visual_intent": "Diễn biến tập 1 đoạn 490s-534s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 490.84,
+          "source_end": 503.6,
+          "weight": 1.0,
+          "speech_unit_id": "u12_1"
+        },
+        {
+          "source_start": 505.02,
+          "source_end": 517.78,
+          "weight": 1.0,
+          "speech_unit_id": "u12_2"
+        },
+        {
+          "source_start": 519.2,
+          "source_end": 531.96,
+          "weight": 1.0,
+          "speech_unit_id": "u12_3"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "narration": [
+        {
+          "id": "u13_1",
+          "text": "Khóa huấn luyện cấp tốc mang tên biến quạ thành phượng hoàng chính thức được kích hoạt ngay trong đêm tối tĩnh mịch với những kỷ luật thép vô cùng khắc nghiệt.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u13_2",
+          "text": "Một cô gái vốn dĩ quen gánh phân bước đi thoăn thoắt ngoài ngõ giờ đây bị ép buộc phải học cách đi đứng thong thả nhẹ nhàng như hoa sen lướt trên mặt nước hồ thu.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u13_3",
+          "text": "Đầu đội bát nước đầy ắp, sau lưng buộc thanh nẹp gỗ thẳng tắp, hễ làm sánh ra một giọt là bà quản sự lập tức dùng thước kẻ gõ mạnh vào tay cảnh cáo không chút thương tiếc.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 534.38,
+      "source_end": 578.91,
+      "visual_intent": "Diễn biến tập 1 đoạn 534s-579s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 535.38,
+          "source_end": 548.14,
+          "weight": 1.0,
+          "speech_unit_id": "u13_1"
+        },
+        {
+          "source_start": 549.56,
+          "source_end": 562.32,
+          "weight": 1.0,
+          "speech_unit_id": "u13_2"
+        },
+        {
+          "source_start": 563.73,
+          "source_end": 576.49,
+          "weight": 1.0,
+          "speech_unit_id": "u13_3"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "narration": [
+        {
+          "id": "u14_1",
+          "text": "Thế nhưng điều khiến Quân Đại và đám gia nhân kinh ngạc tột độ là A Sửu tiếp thu cực kỳ nhanh nhạy, ngón tay búp măng cầm chiếc quạt lụa che nửa mặt duyên dáng đến lạ kỳ.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u14_2",
+          "text": "Từng dáng đi uyển chuyển, nụ cười hé môi e ấp cho đến cái liếc mắt đưa tình của giới quý tộc đều được nàng nắm bắt và mô phỏng chuẩn xác đến từng chi tiết nhỏ nhất.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u14_3",
+          "text": "Dường như cốt cách cao quý vốn dĩ đã nằm sẵn trong từng tế bào và dòng máu của nàng từ kiếp nào, chỉ chờ cơ hội ngàn năm có một này là bùng phát mạnh mẽ phi thường.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 578.91,
+      "source_end": 623.44,
+      "visual_intent": "Diễn biến tập 1 đoạn 579s-623s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 579.91,
+          "source_end": 592.67,
+          "weight": 1.0,
+          "speech_unit_id": "u14_1"
+        },
+        {
+          "source_start": 594.09,
+          "source_end": 606.85,
+          "weight": 1.0,
+          "speech_unit_id": "u14_2"
+        },
+        {
+          "source_start": 608.26,
+          "source_end": 621.02,
+          "weight": 1.0,
+          "speech_unit_id": "u14_3"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "narration": [
+        {
+          "id": "u15_1",
+          "text": "Bên cạnh việc rèn giũa hình thể lễ nghi, Quân Đại còn bắt A Sửu học thuộc lòng gia phả dòng họ, tính cách sở thích và các mối quan hệ tranh quyền đoạt lợi phức tạp trong gia tộc.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u15_2",
+          "text": "Từ thói quen uống trà sen sớm của Lão tổ tông cho đến tật xấu hay soi mói xét nét của các vị phu nhân đều phải ghi nhớ nằm lòng vanh vách không được phép sai sót nửa lời.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u15_3",
+          "text": "Bởi vì trong chốn thâm cung hậu viện đầy cạm bẫy, chỉ cần sơ sẩy lộ ra một thói quen bần hàn nhỏ bé là đầu sẽ lập tức lìa khỏi cổ ngay tức khắc không kịp trăn trối.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 623.44,
+      "source_end": 667.97,
+      "visual_intent": "Diễn biến tập 1 đoạn 623s-668s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 624.44,
+          "source_end": 637.2,
+          "weight": 1.0,
+          "speech_unit_id": "u15_1"
+        },
+        {
+          "source_start": 638.62,
+          "source_end": 651.38,
+          "weight": 1.0,
+          "speech_unit_id": "u15_2"
+        },
+        {
+          "source_start": 652.79,
+          "source_end": 665.55,
+          "weight": 1.0,
+          "speech_unit_id": "u15_3"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "narration": [
+        {
+          "id": "u16_1",
+          "text": "Trong lúc tập luyện dâng trà bái lễ, tỳ nữ vô tình phát hiện trên cánh tay mềm mại của A Sửu có một vết sẹo dài do thời thơ ấu vất vả lao động kiếm sống để lại.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u16_2",
+          "text": "Quân Đại hoảng hốt nhận ra tay tiểu thư khuê các mịn màng như ngọc không tì vết, nếu đêm tân hôn bị nhà trai phát hiện vết sẹo này thì màn kịch sẽ lộ tẩy hoàn toàn.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u16_3",
+          "text": "Ả ta lập tức sai gia nhân mang bột phấn ngọc trai quý hiếm và cao mờ sẹo hảo hạng đến bôi trát nhiều lớp kỹ lưỡng nhằm ngụy trang tuyệt đối vết tích trên da thịt.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 667.97,
+      "source_end": 712.5,
+      "visual_intent": "Diễn biến tập 1 đoạn 668s-712s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 668.97,
+          "source_end": 681.73,
+          "weight": 1.0,
+          "speech_unit_id": "u16_1"
+        },
+        {
+          "source_start": 683.15,
+          "source_end": 695.91,
+          "weight": 1.0,
+          "speech_unit_id": "u16_2"
+        },
+        {
+          "source_start": 697.32,
+          "source_end": 710.08,
+          "weight": 1.0,
+          "speech_unit_id": "u16_3"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "narration": [
+        {
+          "id": "u17_1",
+          "text": "A Sửu cắn chặt răng chịu đựng cảm giác đau rát buốt thấu xương khi lớp thuốc đặc trị bôi lên da thịt mà không hề hé môi kêu ca than vãn lấy một tiếng nào.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u17_2",
+          "text": "Sự bình thản đến lạnh lùng và ánh mắt kiên định phi thường của cô gái nghèo khiến đám ma ma hầu cận bên cạnh bắt đầu nảy sinh sự kiêng dè và nể phục từ tận đáy lòng.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u17_3",
+          "text": "Nàng hiểu rõ hơn ai hết rằng đây không chỉ đơn thuần là một màn kịch gả thay gánh nạn, mà còn là chiếc chìa khóa duy nhất giúp nàng vươn lên đổi thay số phận bèo bọt.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 712.5,
+      "source_end": 757.03,
+      "visual_intent": "Diễn biến tập 1 đoạn 712s-757s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 713.5,
+          "source_end": 726.26,
+          "weight": 1.0,
+          "speech_unit_id": "u17_1"
+        },
+        {
+          "source_start": 727.68,
+          "source_end": 740.44,
+          "weight": 1.0,
+          "speech_unit_id": "u17_2"
+        },
+        {
+          "source_start": 741.85,
+          "source_end": 754.61,
+          "weight": 1.0,
+          "speech_unit_id": "u17_3"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "narration": [
+        {
+          "id": "u18_1",
+          "text": "Sáng hôm sau, hồi chuông báo hiệu giờ thỉnh an trang trọng vang vọng khắp các dãy hành lang rợp bóng cây cổ thụ trăm năm của Thừa An Bá phủ uy nghiêm.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u18_2",
+          "text": "Đây chính là bài thi sát hạch sống còn đầu tiên: A Sửu phải trực tiếp diện kiến Lão tổ tông và mẫu thân trước khi chính thức khoác áo tân nương bước lên kiệu hoa.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u18_3",
+          "text": "Quân Đại đứng nép mình sau tấm bình phong chạm trổ hoa điểu, mồ hôi túa ra ướt đẫm trán vì lo sợ kế hoạch tráo mận đổi đào bị vạch trần giữa thanh thiên bạch nhật.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 757.03,
+      "source_end": 801.56,
+      "visual_intent": "Diễn biến tập 1 đoạn 757s-802s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 758.03,
+          "source_end": 770.79,
+          "weight": 1.0,
+          "speech_unit_id": "u18_1"
+        },
+        {
+          "source_start": 772.21,
+          "source_end": 784.97,
+          "weight": 1.0,
+          "speech_unit_id": "u18_2"
+        },
+        {
+          "source_start": 786.38,
+          "source_end": 799.14,
+          "weight": 1.0,
+          "speech_unit_id": "u18_3"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "narration": [
+        {
+          "id": "u19_1",
+          "text": "A Sửu khoác lên mình bộ gấm hoa đỏ rực lộng lẫy, đầu cài trâm ngọc buông rủ lung linh, từng bước chân đoan trang tiến vào đại sảnh như một nàng tiên giáng trần đích thực.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u19_2",
+          "text": "Điệu bộ dịu dàng thùy mị, lời nói dạ thưa nhỏ nhẹ lễ phép khiến ngay cả các vị ma ma khó tính khắt khe nhất trong phủ cũng phải gật gù hài lòng khen ngợi tấm tắc.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u19_3",
+          "text": "Quân Đại nấp bên trong nhìn ra mà tức anh ách nghẹn họng, tự hỏi không hiểu con nhỏ gánh dạ hương này có uống nhầm thần dược quý tộc bí truyền ở nơi nào hay không.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 801.56,
+      "source_end": 846.09,
+      "visual_intent": "Diễn biến tập 1 đoạn 802s-846s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 802.56,
+          "source_end": 815.32,
+          "weight": 1.0,
+          "speech_unit_id": "u19_1"
+        },
+        {
+          "source_start": 816.74,
+          "source_end": 829.5,
+          "weight": 1.0,
+          "speech_unit_id": "u19_2"
+        },
+        {
+          "source_start": 830.91,
+          "source_end": 843.67,
+          "weight": 1.0,
+          "speech_unit_id": "u19_3"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "narration": [
+        {
+          "id": "u20_1",
+          "text": "Lão phu nhân ngồi uy nghiêm trên chiếc ghế bọc gấm nhung khẽ nhấp một ngụm trà thơm, đôi mắt tinh đời từng trải nheo lại quan sát từng cử chỉ nhỏ của đứa cháu gái yêu quý.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u20_2",
+          "text": "Bà cụ đột nhiên cất tiếng gọi A Sửu bước lại gần rồi nắm chặt lấy bàn tay nàng, nhẹ nhàng ân cần hỏi han về những tâm tư cảm xúc trước ngày đại hôn xuất giá.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u20_3",
+          "text": "Không khí trong toàn bộ đại sảnh bỗng chốc đông cứng lại như băng tuyết, ai nấy đều nín thở hồi hộp chờ đợi xem liệu có điều gì sơ hở bị phát giác hay không.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 846.09,
+      "source_end": 890.62,
+      "visual_intent": "Diễn biến tập 1 đoạn 846s-891s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 847.09,
+          "source_end": 859.85,
+          "weight": 1.0,
+          "speech_unit_id": "u20_1"
+        },
+        {
+          "source_start": 861.27,
+          "source_end": 874.03,
+          "weight": 1.0,
+          "speech_unit_id": "u20_2"
+        },
+        {
+          "source_start": 875.44,
+          "source_end": 888.2,
+          "weight": 1.0,
+          "speech_unit_id": "u20_3"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "narration": [
+        {
+          "id": "u21_1",
+          "text": "Bằng sự nhạy bén và thông minh trời phú, A Sửu khéo léo đáp rằng được gả cho thế tử Anh Quốc Công là phúc phận lớn lao vô bờ của cuộc đời mình và cả dòng tộc.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u21_2",
+          "text": "Dù phu quân hiện tại đang lâm trọng bệnh, nàng nguyện toàn tâm toàn ý chăm sóc ngày đêm không quản khó nhọc, một lòng vì gia môn mà không hề oán thán nửa lời.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u21_3",
+          "text": "Câu trả lời thấu tình đạt lý, vừa giữ trọn đạo hiếu làm con vừa thể hiện khí chất đoan trang của tiểu thư khuê các khiến Lão phu nhân vô cùng xúc động và nở nụ cười mãn nguyện.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 890.62,
+      "source_end": 935.16,
+      "visual_intent": "Diễn biến tập 1 đoạn 891s-935s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 891.62,
+          "source_end": 904.38,
+          "weight": 1.0,
+          "speech_unit_id": "u21_1"
+        },
+        {
+          "source_start": 905.8,
+          "source_end": 918.56,
+          "weight": 1.0,
+          "speech_unit_id": "u21_2"
+        },
+        {
+          "source_start": 919.98,
+          "source_end": 932.74,
+          "weight": 1.0,
+          "speech_unit_id": "u21_3"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "narration": [
+        {
+          "id": "u22_1",
+          "text": "Lão tổ tông liền tháo ngay chiếc vòng ngọc bích gia truyền đeo vào cổ tay nàng, dõng dạc tuyên bố trước toàn thể gia quyến về của hồi môn mười dặm hồng trang danh giá.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u22_2",
+          "text": "Bà khẳng định Thừa An Bá phủ tuyệt đối không để con cháu dòng dõi chịu chút thiệt thòi nào khi bước chân sang cửa nhà người khác làm dâu hiền vợ thảo.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u22_3",
+          "text": "A Sửu dập đầu quỳ lạy tạ ơn sâu nặng, trong lòng thầm nhủ phen này liều mạng đi làm dâu hào môn xung hỷ coi bộ cũng gặt hái được những món hời bất ngờ ngoài mong đợi.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 935.16,
+      "source_end": 979.69,
+      "visual_intent": "Diễn biến tập 1 đoạn 935s-980s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 936.16,
+          "source_end": 948.92,
+          "weight": 1.0,
+          "speech_unit_id": "u22_1"
+        },
+        {
+          "source_start": 950.34,
+          "source_end": 963.1,
+          "weight": 1.0,
+          "speech_unit_id": "u22_2"
+        },
+        {
+          "source_start": 964.51,
+          "source_end": 977.27,
+          "weight": 1.0,
+          "speech_unit_id": "u22_3"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "narration": [
+        {
+          "id": "u23_1",
+          "text": "Trái ngược hoàn toàn với niềm hân hoan rạng rỡ của Lão phu nhân, Bá phu nhân ngồi bên cạnh lại có sắc mặt vô cùng gượng gạo, tái mét và bất an tột độ.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u23_2",
+          "text": "Ánh mắt bà ta nhìn xoáy vào A Sửu chứa chan nỗi bàng hoàng thảng thốt xen lẫn xót xa, những ngón tay lần tràng hạt run rẩy không ngừng phát ra tiếng lách cách nghẹt thở.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u23_3",
+          "text": "Dường như trong sâu thẳm tâm can người đàn bà quý tộc này đang chôn giấu một bí mật tội lỗi khủng khiếp liên quan trực tiếp đến thân thế của hai đứa trẻ năm xưa.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 979.69,
+      "source_end": 1024.22,
+      "visual_intent": "Diễn biến tập 1 đoạn 980s-1024s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 980.69,
+          "source_end": 993.45,
+          "weight": 1.0,
+          "speech_unit_id": "u23_1"
+        },
+        {
+          "source_start": 994.87,
+          "source_end": 1007.63,
+          "weight": 1.0,
+          "speech_unit_id": "u23_2"
+        },
+        {
+          "source_start": 1009.04,
+          "source_end": 1021.8,
+          "weight": 1.0,
+          "speech_unit_id": "u23_3"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "narration": [
+        {
+          "id": "u24_1",
+          "text": "Ngay sau khi buổi thỉnh an kết thúc, Bá phu nhân vội vã kéo Quân Đại vào phòng kín đóng chặt then cài, gắt gao tra hỏi về nguồn gốc xuất thân thực sự của cô gái lạ mặt kia.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u24_2",
+          "text": "Quân Đại bực bội gạt phắt đi không thèm giải thích, lạnh lùng bảo rằng mẹ chỉ cần biết con gái ruột của mẹ không phải đi làm góa phụ chịu khổ nhục cả đời là đủ rồi.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u24_3",
+          "text": "Ả ta còn buông lời đe dọa ngược lại mẹ mình không được phép can thiệp vào chuyện này, nếu làm hỏng kế hoạch thì cả gia đình sẽ phải gánh tội khi quân lừa dối hoàng thất.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1024.22,
+      "source_end": 1068.75,
+      "visual_intent": "Diễn biến tập 1 đoạn 1024s-1069s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1025.22,
+          "source_end": 1037.98,
+          "weight": 1.0,
+          "speech_unit_id": "u24_1"
+        },
+        {
+          "source_start": 1039.4,
+          "source_end": 1052.16,
+          "weight": 1.0,
+          "speech_unit_id": "u24_2"
+        },
+        {
+          "source_start": 1053.57,
+          "source_end": 1066.33,
+          "weight": 1.0,
+          "speech_unit_id": "u24_3"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "narration": [
+        {
+          "id": "u25_1",
+          "text": "Bá phu nhân rơi nước mắt nghẹn ngào trong cay đắng, thốt lên rằng nếu trên đời có luật nhân quả báo ứng thì dòng họ này sẽ gánh chịu muôn kiếp không ngày nào yên ổn.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u25_2",
+          "text": "Quân Đại cười khẩy đầy kiêu ngạo đáp lại rằng trên cõi đời này làm gì có nhân quả công bằng, kẻ nào nắm trong tay quyền lực và vàng bạc thì kẻ đó mới nắm giữ chân lý sống.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u25_3",
+          "text": "Đúng là tư duy thiển cận của một nhân vật phản diện kinh điển, càng tự đắc ngạo mạn bao nhiêu thì sau này khi nghiệp quật sẽ càng ê chề và đau đớn bấy nhiêu.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1068.75,
+      "source_end": 1113.28,
+      "visual_intent": "Diễn biến tập 1 đoạn 1069s-1113s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1069.75,
+          "source_end": 1082.51,
+          "weight": 1.0,
+          "speech_unit_id": "u25_1"
+        },
+        {
+          "source_start": 1083.93,
+          "source_end": 1096.69,
+          "weight": 1.0,
+          "speech_unit_id": "u25_2"
+        },
+        {
+          "source_start": 1098.1,
+          "source_end": 1110.86,
+          "weight": 1.0,
+          "speech_unit_id": "u25_3"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "narration": [
+        {
+          "id": "u26_1",
+          "text": "Thời gian thấm thoát thoi đưa như bóng câu qua cửa sổ, ngày lành tháng tốt tổ chức hôn lễ xung hỷ trừ tà cuối cùng cũng đã điểm trên tấm lịch đỏ của phủ đệ.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u26_2",
+          "text": "Cả Thừa An Bá phủ giăng đèn kết hoa đỏ rực rỡ từ trong ra ngoài, tiếng kèn tiếng trống nhạc hỷ vang vọng tưng bừng khắp các ngõ phố trung tâm kinh thành phồn hoa.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u26_3",
+          "text": "Bên trong khuê phòng son rỗi, A Sửu đang được các bà mối và cung nữ kỳ cựu tỉ mỉ trang điểm chải chuốt cẩn thận từng lọn tóc mượt mà đen óng ả.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1113.28,
+      "source_end": 1157.81,
+      "visual_intent": "Diễn biến tập 1 đoạn 1113s-1158s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1114.28,
+          "source_end": 1127.04,
+          "weight": 1.0,
+          "speech_unit_id": "u26_1"
+        },
+        {
+          "source_start": 1128.46,
+          "source_end": 1141.22,
+          "weight": 1.0,
+          "speech_unit_id": "u26_2"
+        },
+        {
+          "source_start": 1142.63,
+          "source_end": 1155.39,
+          "weight": 1.0,
+          "speech_unit_id": "u26_3"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "narration": [
+        {
+          "id": "u27_1",
+          "text": "Bộ giá y màu đỏ son thêu hoa văn chim phượng hoàng lộng lẫy bằng chỉ vàng kim ôm trọn lấy vóc dáng thon thả, uyển chuyển kiều diễm của nàng tân nương tuyệt sắc.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u27_2",
+          "text": "Khuôn mặt thanh tú được dặm phấn thoa son tinh xảo, làm nổi bật đôi mắt phượng sắc bén thông minh cùng làn môi son quyến rũ hút trọn mọi ánh nhìn say đắm.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u27_3",
+          "text": "Đến thời khắc này, không còn bất kỳ ai có thể nhận ra bóng dáng lam lũ của một cô gái nghèo từng gánh dạ hương mưu sinh nơi ngõ hẻm lầy lội ngày nào nữa.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1157.81,
+      "source_end": 1202.34,
+      "visual_intent": "Diễn biến tập 1 đoạn 1158s-1202s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1158.81,
+          "source_end": 1171.57,
+          "weight": 1.0,
+          "speech_unit_id": "u27_1"
+        },
+        {
+          "source_start": 1172.99,
+          "source_end": 1185.75,
+          "weight": 1.0,
+          "speech_unit_id": "u27_2"
+        },
+        {
+          "source_start": 1187.16,
+          "source_end": 1199.92,
+          "weight": 1.0,
+          "speech_unit_id": "u27_3"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "narration": [
+        {
+          "id": "u28_1",
+          "text": "Quân Đại đứng bên cạnh ngắm nhìn bản sao hoàn mỹ đến không tì vết của mình mà trong lòng dâng trào muôn vàn cảm xúc hỗn độn vừa đắc ý vừa ghen ghét khó tả.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u28_2",
+          "text": "Ả tiến lại thật gần, tự tay chỉnh sửa lại chiếc khăn trùm đầu màu đỏ thêu hoa sen rồi ghé sát vào tai A Sửu buông ra những lời đe dọa sắc lạnh như băng giá.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u28_3",
+          "text": "Ả bảo rằng khi đã bước chân qua cánh cổng phủ Anh Quốc Công, việc sống hay chết, vinh hay nhục đều hoàn toàn phụ thuộc vào sự kín miệng và ngoan ngoãn của nàng.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1202.34,
+      "source_end": 1246.88,
+      "visual_intent": "Diễn biến tập 1 đoạn 1202s-1247s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1203.34,
+          "source_end": 1216.1,
+          "weight": 1.0,
+          "speech_unit_id": "u28_1"
+        },
+        {
+          "source_start": 1217.52,
+          "source_end": 1230.28,
+          "weight": 1.0,
+          "speech_unit_id": "u28_2"
+        },
+        {
+          "source_start": 1231.7,
+          "source_end": 1244.46,
+          "weight": 1.0,
+          "speech_unit_id": "u28_3"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "narration": [
+        {
+          "id": "u29_1",
+          "text": "A Sửu khẽ mỉm cười nhẹ nhàng đáp lễ, ánh mắt trong veo không hề biểu lộ chút nao núng hay sợ hãi nào trước sự uy hiếp gay gắt của nàng tiểu thư kênh kiệu độc ác.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u29_2",
+          "text": "Nàng bình thản nhắc nhở Quân Đại hãy luôn nhớ giữ đúng lời hứa gửi thuốc men thượng hạng và tiền trợ cấp sinh hoạt đều đặn về cho mẹ nuôi ở quê nhà chữa bệnh.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u29_3",
+          "text": "Hai người phụ nữ trao nhau cái nhìn đầy ẩn ý và toan tính, một cuộc hoán đổi vai diễn lịch sử chính thức bắt đầu chuyển bánh không có đường quay đầu trở lại.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1246.88,
+      "source_end": 1291.41,
+      "visual_intent": "Diễn biến tập 1 đoạn 1247s-1291s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1247.88,
+          "source_end": 1260.64,
+          "weight": 1.0,
+          "speech_unit_id": "u29_1"
+        },
+        {
+          "source_start": 1262.06,
+          "source_end": 1274.82,
+          "weight": 1.0,
+          "speech_unit_id": "u29_2"
+        },
+        {
+          "source_start": 1276.23,
+          "source_end": 1288.99,
+          "weight": 1.0,
+          "speech_unit_id": "u29_3"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "narration": [
+        {
+          "id": "u30_1",
+          "text": "Tấm khăn voan đỏ thêu phượng buông xuống che khuất dung nhan diễm lệ, A Sửu bước từng bước chân vững chãi và tự tin ra khỏi khuê phòng hướng thẳng về phía cổng lớn.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u30_2",
+          "text": "Mỗi bước chân nàng đi qua là một lần nàng bỏ lại sau lưng quá khứ bần hàn tăm tối để can trường tiến về phía tương lai mịt mờ phía trước nhưng đầy hứa hẹn bất ngờ.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u30_3",
+          "text": "Tiếng pháo nổ vang trời giòn giã ngoài ngõ hòa cùng tiếng reo hò chúc tụng náo nhiệt của đám đông người dân đứng chen chúc chật kín hai bên đường cái quan.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1291.41,
+      "source_end": 1335.94,
+      "visual_intent": "Diễn biến tập 1 đoạn 1291s-1336s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1292.41,
+          "source_end": 1305.17,
+          "weight": 1.0,
+          "speech_unit_id": "u30_1"
+        },
+        {
+          "source_start": 1306.59,
+          "source_end": 1319.35,
+          "weight": 1.0,
+          "speech_unit_id": "u30_2"
+        },
+        {
+          "source_start": 1320.76,
+          "source_end": 1333.52,
+          "weight": 1.0,
+          "speech_unit_id": "u30_3"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "narration": [
+        {
+          "id": "u31_1",
+          "text": "Chiếc kiệu hoa tám người khiêng lộng lẫy thêu rồng phượng nâng bổng nàng tân nương lên không trung trong sự kính cẩn nghiêm trang của toàn bộ đoàn tùy tùng rước dâu.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u31_2",
+          "text": "Phía sau cỗ kiệu là hàng trăm rương hòm của cải sính lễ vàng bạc gấm vóc trải dài đúng mười dặm hồng trang như lời hứa son sắt của Lão phu nhân dòng họ Thừa An Bá.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u31_3",
+          "text": "Dân chúng khắp kinh thành đổ xô ra đường trầm trồ thán phục không ngớt trước độ chịu chơi xa hoa và gia thế hiển hách tột bậc của mối lương duyên danh gia vọng tộc này.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1335.94,
+      "source_end": 1380.47,
+      "visual_intent": "Diễn biến tập 1 đoạn 1336s-1380s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1336.94,
+          "source_end": 1349.7,
+          "weight": 1.0,
+          "speech_unit_id": "u31_1"
+        },
+        {
+          "source_start": 1351.12,
+          "source_end": 1363.88,
+          "weight": 1.0,
+          "speech_unit_id": "u31_2"
+        },
+        {
+          "source_start": 1365.29,
+          "source_end": 1378.05,
+          "weight": 1.0,
+          "speech_unit_id": "u31_3"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "narration": [
+        {
+          "id": "u32_1",
+          "text": "Người ngoài nhìn vào cứ ngỡ đây là một đám cưới thế kỷ trong mơ ngập tràn hạnh phúc, đâu ai ngờ sâu bên trong kiệu hoa lại là một cú lừa ngoạn mục chấn động lịch sử.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u32_2",
+          "text": "Cô dâu danh chính ngôn thuận thì đang trốn chui trốn lủi trong phòng uống trà ăn điểm tâm, còn cô dâu giả mạo thì đang ngồi thẳng lưng hiên ngang tiến vào hang cọp bắt cọp con.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u32_3",
+          "text": "A Sửu khẽ vén một góc rèm kiệu nhìn ngắm phố xá tấp nập bên ngoài, tự nhủ với lòng mình nhất định phải sinh tồn và sống sót trở về trong vinh quang rực rỡ nhất.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1380.47,
+      "source_end": 1425.0,
+      "visual_intent": "Diễn biến tập 1 đoạn 1380s-1425s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1381.47,
+          "source_end": 1394.23,
+          "weight": 1.0,
+          "speech_unit_id": "u32_1"
+        },
+        {
+          "source_start": 1395.65,
+          "source_end": 1408.41,
+          "weight": 1.0,
+          "speech_unit_id": "u32_2"
+        },
+        {
+          "source_start": 1409.82,
+          "source_end": 1422.58,
+          "weight": 1.0,
+          "speech_unit_id": "u32_3"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "narration": [
+        {
+          "id": "u33_1",
+          "text": "Đoàn rước dâu rầm rộ dần dần tiến về phía cổng phủ Anh Quốc Công uy nghiêm sừng sững, nơi cánh cổng sắt sơn son khổng lồ đang từ từ mở rộng đón đoàn rước dâu vào nội viện.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u33_2",
+          "text": "Bầu không khí ở nơi đây tĩnh mịch và trang nghiêm đến ngột ngạt, tuyệt nhiên không có tiếng cười đùa rộn rã mà chỉ thoang thoảng mùi thuốc bắc nồng nặc bay trong gió lạnh.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u33_3",
+          "text": "Dấu hiệu cảnh báo rõ ràng cho thấy tình trạng nguy kịch thập tử nhất sinh của vị thế tử nằm bên trong quả thực không hề bị phóng đại một chút nào cả.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1425.0,
+      "source_end": 1469.53,
+      "visual_intent": "Diễn biến tập 1 đoạn 1425s-1470s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1426.0,
+          "source_end": 1438.76,
+          "weight": 1.0,
+          "speech_unit_id": "u33_1"
+        },
+        {
+          "source_start": 1440.18,
+          "source_end": 1452.94,
+          "weight": 1.0,
+          "speech_unit_id": "u33_2"
+        },
+        {
+          "source_start": 1454.35,
+          "source_end": 1467.11,
+          "weight": 1.0,
+          "speech_unit_id": "u33_3"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "narration": [
+        {
+          "id": "u34_1",
+          "text": "Kiệu hoa hạ xuống trước bậc tam cấp thềm rồng lót thảm đỏ, bà mối đỡ lấy tân nương cẩn thận bước qua chậu than hồng rực lửa theo đúng phong tục cổ xưa xua đuổi tà khí xui xẻo.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u34_2",
+          "text": "Từng nghi thức bái đường thành thân được cử hành vô cùng nhanh chóng và gấp gáp dưới sự chứng kiến nghiêm trang của các vị bô lão và quan khách hai họ quyền quý.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u34_3",
+          "text": "Tất cả mọi người có mặt đều nơm nớp lo sợ thế tử chẳng may tắt thở giữa chừng thì đám cưới linh đình này sẽ biến thành đám tang tang tóc ngay trong nháy mắt.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1469.53,
+      "source_end": 1514.06,
+      "visual_intent": "Diễn biến tập 1 đoạn 1470s-1514s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1470.53,
+          "source_end": 1483.29,
+          "weight": 1.0,
+          "speech_unit_id": "u34_1"
+        },
+        {
+          "source_start": 1484.71,
+          "source_end": 1497.47,
+          "weight": 1.0,
+          "speech_unit_id": "u34_2"
+        },
+        {
+          "source_start": 1498.88,
+          "source_end": 1511.64,
+          "weight": 1.0,
+          "speech_unit_id": "u34_3"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "narration": [
+        {
+          "id": "u35_1",
+          "text": "A Sửu được hai tỳ nữ dìu đưa thẳng vào căn phòng tân hôn u tối và tĩnh lặng, nơi chiếc giường gỗ lim chạm khắc tinh xảo đang buông rèm lụa dày đặc cách biệt thế gian.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u35_2",
+          "text": "Trên chiếc giường hỷ, một chàng trai tuấn tú phi phàm với đường nét gương mặt góc cạnh sắc nét đang nằm bất động, sắc mặt nhợt nhạt không vướng một giọt máu tươi.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u35_3",
+          "text": "Đó chính là Lục Trạc, vị chiến thần trẻ tuổi bách chiến bách thắng lẫy lừng nơi sa trường nay lại phải chịu cảnh nằm liệt một chỗ chờ ngày số mệnh an bài định đoạt.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1514.06,
+      "source_end": 1558.59,
+      "visual_intent": "Diễn biến tập 1 đoạn 1514s-1559s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1515.06,
+          "source_end": 1527.82,
+          "weight": 1.0,
+          "speech_unit_id": "u35_1"
+        },
+        {
+          "source_start": 1529.24,
+          "source_end": 1542.0,
+          "weight": 1.0,
+          "speech_unit_id": "u35_2"
+        },
+        {
+          "source_start": 1543.41,
+          "source_end": 1556.17,
+          "weight": 1.0,
+          "speech_unit_id": "u35_3"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "narration": [
+        {
+          "id": "u36_1",
+          "text": "Đám gia nhân và bà mối sau khi hoàn tất các thủ tục giao bôi hình thức liền vội vã cúi đầu lui hết ra ngoài, cẩn thận khóa chặt then cài cửa phòng lại từ bên ngoài.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u36_2",
+          "text": "Căn phòng tân hôn rộng lớn và trang trọng giờ đây chỉ còn lại hai con người hoàn toàn xa lạ, một người hôn mê bất tỉnh nhân sự và một người mang thân phận giả mạo thế thân.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u36_3",
+          "text": "A Sửu tự tay vén chiếc khăn voan đỏ thêu phượng hoàng ra, khẽ thở phào nhẹ nhõm một hơi dài sau chuỗi thời khắc căng thẳng tột độ đến mức nghẹt thở.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1558.59,
+      "source_end": 1603.12,
+      "visual_intent": "Diễn biến tập 1 đoạn 1559s-1603s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1559.59,
+          "source_end": 1572.35,
+          "weight": 1.0,
+          "speech_unit_id": "u36_1"
+        },
+        {
+          "source_start": 1573.77,
+          "source_end": 1586.53,
+          "weight": 1.0,
+          "speech_unit_id": "u36_2"
+        },
+        {
+          "source_start": 1587.94,
+          "source_end": 1600.7,
+          "weight": 1.0,
+          "speech_unit_id": "u36_3"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "narration": [
+        {
+          "id": "u37_1",
+          "text": "Nàng tiến lại gần bàn trà, thong thả rót một chén nước lọc rồi bốc ngay một miếng bánh ngọt đưa vào miệng nhai ngon lành để lót dạ sau cả một ngày dài nhịn đói mệt mỏi.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u37_2",
+          "text": "Vừa ăn nàng vừa ngắm nghía vị phu quân trên danh nghĩa của mình, thầm nghĩ bụng chàng thế tử này khôi ngô tuấn tú phong độ thế này mà chết yểu thì quá là phí phạm của trời.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u37_3",
+          "text": "Dù sao thì việc xung hỷ cũng đã hoàn thành êm đẹp, nàng chỉ việc diễn tròn vai một người vợ hiền thảo chăm sóc phu quân để chờ ngày mẹ nuôi bình phục hoàn toàn ở quê.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1603.12,
+      "source_end": 1647.66,
+      "visual_intent": "Diễn biến tập 1 đoạn 1603s-1648s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1604.12,
+          "source_end": 1616.88,
+          "weight": 1.0,
+          "speech_unit_id": "u37_1"
+        },
+        {
+          "source_start": 1618.3,
+          "source_end": 1631.06,
+          "weight": 1.0,
+          "speech_unit_id": "u37_2"
+        },
+        {
+          "source_start": 1632.48,
+          "source_end": 1645.24,
+          "weight": 1.0,
+          "speech_unit_id": "u37_3"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "narration": [
+        {
+          "id": "u38_1",
+          "text": "Nhưng đúng lúc A Sửu bước lại gần mép giường cúi người định chỉnh lại chăn ấm cho phu quân, một bàn tay lạnh ngắt như băng bất ngờ vươn lên chộp chặt lấy cổ tay nàng.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u38_2",
+          "text": "Lực nắm mạnh mẽ và dứt khoát như một chiếc gọng kìm sắt đá khiến nàng giật thót tim, đánh rơi cả chiếc khăn tay thêu hoa sen quý giá xuống nền đất lạnh.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u38_3",
+          "text": "Đôi mắt sâu thẳm đen nhánh của Lục Trạc khẽ mở ra từ từ, ánh nhìn sắc bén và lạnh lùng như lưỡi gươm báu lập tức chiếu thẳng vào dung mạo của nàng tân nương mới cưới.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1647.66,
+      "source_end": 1692.19,
+      "visual_intent": "Diễn biến tập 1 đoạn 1648s-1692s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1648.66,
+          "source_end": 1661.42,
+          "weight": 1.0,
+          "speech_unit_id": "u38_1"
+        },
+        {
+          "source_start": 1662.84,
+          "source_end": 1675.6,
+          "weight": 1.0,
+          "speech_unit_id": "u38_2"
+        },
+        {
+          "source_start": 1677.01,
+          "source_end": 1689.77,
+          "weight": 1.0,
+          "speech_unit_id": "u38_3"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "narration": [
+        {
+          "id": "u39_1",
+          "text": "Vị thế tử tưởng chừng như sắp sửa đi chầu trời nay lại hồi tỉnh một cách thần kỳ đến khó tin ngay trong đêm tân hôn định mệnh đầu tiên của hai người.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u39_2",
+          "text": "Sát khí và khí tức lạnh lẽo bao trùm khắp căn phòng khi chàng cất giọng khàn đặc đầy uy quyền gặng hỏi rằng nàng rốt cuộc là ai và do kẻ nào phái đến đây ám hại chàng.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u39_3",
+          "text": "A Sửu sững sờ trong giây lát ngắn ngủi, nhưng bản năng sinh tồn mãnh liệt của một cô gái từng lăn lộn va vấp chốn giang hồ nghèo khó lập tức phát huy tác dụng kịp thời.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1692.19,
+      "source_end": 1736.72,
+      "visual_intent": "Diễn biến tập 1 đoạn 1692s-1737s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1693.19,
+          "source_end": 1705.95,
+          "weight": 1.0,
+          "speech_unit_id": "u39_1"
+        },
+        {
+          "source_start": 1707.37,
+          "source_end": 1720.13,
+          "weight": 1.0,
+          "speech_unit_id": "u39_2"
+        },
+        {
+          "source_start": 1721.54,
+          "source_end": 1734.3,
+          "weight": 1.0,
+          "speech_unit_id": "u39_3"
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "narration": [
+        {
+          "id": "u40_1",
+          "text": "Nàng không hề luống cuống run rẩy hay để lộ chút hoảng loạn nào, trái lại nhẹ nhàng đỡ chàng ngồi tựa vào thành giường rồi rót ngay một chén trà ấm dâng tới tận miệng chàng.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u40_2",
+          "text": "Nàng từ tốn cất lời giải thích rằng thiếp là thê tử hợp pháp do Thừa An Bá phủ gả sang để hầu hạ chàng, xin thế tử bớt giận giữ gìn sức khỏe đang lúc trọng thương.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u40_3",
+          "text": "Sự bình thản và điềm tĩnh khác thường của nàng thê tử mới cưới khiến vị thế tử đa nghi, sắc sảo bắt đầu dấy lên mối hoài nghi sâu sắc về thân thế thực sự của nàng.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1736.72,
+      "source_end": 1781.25,
+      "visual_intent": "Diễn biến tập 1 đoạn 1737s-1781s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1737.72,
+          "source_end": 1750.48,
+          "weight": 1.0,
+          "speech_unit_id": "u40_1"
+        },
+        {
+          "source_start": 1751.9,
+          "source_end": 1764.66,
+          "weight": 1.0,
+          "speech_unit_id": "u40_2"
+        },
+        {
+          "source_start": 1766.07,
+          "source_end": 1778.83,
+          "weight": 1.0,
+          "speech_unit_id": "u40_3"
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "narration": [
+        {
+          "id": "u41_1",
+          "text": "Lục Trạc uống cạn chén nước ấm dịu giọng, ánh mắt chàng vẫn không rời khỏi từng nét mặt và cử chỉ biểu cảm nhỏ nhất của người con gái đang đứng trước mắt mình.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u41_2",
+          "text": "Chàng tinh ý nhận ra đôi bàn tay của nàng tuy được bôi phấn trắng mịn màng nhưng nơi khớp ngón tay lại có những vết chai sạn đặc trưng của người từng lao động vất vả lâu năm.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u41_3",
+          "text": "Một thiên kim tiểu thư quyền quý sống trong nhung lụa từ tấm bé tuyệt đối không thể nào sở hữu đôi bàn tay chai sần lam lũ của tầng lớp bần hàn như thế này được.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1781.25,
+      "source_end": 1825.78,
+      "visual_intent": "Diễn biến tập 1 đoạn 1781s-1826s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1782.25,
+          "source_end": 1795.01,
+          "weight": 1.0,
+          "speech_unit_id": "u41_1"
+        },
+        {
+          "source_start": 1796.43,
+          "source_end": 1809.19,
+          "weight": 1.0,
+          "speech_unit_id": "u41_2"
+        },
+        {
+          "source_start": 1810.6,
+          "source_end": 1823.36,
+          "weight": 1.0,
+          "speech_unit_id": "u41_3"
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "narration": [
+        {
+          "id": "u42_1",
+          "text": "A Sửu tinh ý phát hiện ra ánh mắt chàng đang săm soi đôi bàn tay mình, liền nhanh trí giả vờ ngượng ngùng e thẹn giấu vội tay vào trong ống tay áo rộng thùng thình.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u42_2",
+          "text": "Nàng lanh lợi chống chế rằng dạo gần đây nàng thường xuyên ăn chay niệm Phật, chép kinh cầu an cho thế tử nên ngón tay mới bị chai cứng vì cầm bút lông nhiều ngày.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u42_3",
+          "text": "Lý do nghe qua thì vô cùng hợp lý và tràn ngập nghĩa tình phu thê sâu sắc, nhưng trong bụng vị thế tử từng trải thì thừa biết tỏng nàng đang bốc phét không hề chớp mắt.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1825.78,
+      "source_end": 1870.31,
+      "visual_intent": "Diễn biến tập 1 đoạn 1826s-1870s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1826.78,
+          "source_end": 1839.54,
+          "weight": 1.0,
+          "speech_unit_id": "u42_1"
+        },
+        {
+          "source_start": 1840.96,
+          "source_end": 1853.72,
+          "weight": 1.0,
+          "speech_unit_id": "u42_2"
+        },
+        {
+          "source_start": 1855.13,
+          "source_end": 1867.89,
+          "weight": 1.0,
+          "speech_unit_id": "u42_3"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "narration": [
+        {
+          "id": "u43_1",
+          "text": "Bên ngoài khung cửa sổ phòng tân hôn, bóng dáng của một tỳ nữ thân tín do thế lực ngầm trong phủ cài cắm đang lén lút dòm ngó nghe ngóng mọi động tĩnh bên trong.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u43_2",
+          "text": "Nhận thấy có kẻ rình rập ngoài hiên, Lục Trạc bất ngờ đưa tay kéo mạnh A Sửu ngã nhào vào lòng mình trên chiếc giường hỷ phủ đầy những cánh hoa hồng thơm ngát.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u43_3",
+          "text": "Hành động táo bạo và quá đỗi đường đột của người phu quân khiến A Sửu đỏ bừng hai gò má, trái tim đập thình thịch liên hồi như tiếng trống trận dồn dập trong lồng ngực.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1870.31,
+      "source_end": 1914.84,
+      "visual_intent": "Diễn biến tập 1 đoạn 1870s-1915s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1871.31,
+          "source_end": 1884.07,
+          "weight": 1.0,
+          "speech_unit_id": "u43_1"
+        },
+        {
+          "source_start": 1885.49,
+          "source_end": 1898.25,
+          "weight": 1.0,
+          "speech_unit_id": "u43_2"
+        },
+        {
+          "source_start": 1899.66,
+          "source_end": 1912.42,
+          "weight": 1.0,
+          "speech_unit_id": "u43_3"
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "narration": [
+        {
+          "id": "u44_1",
+          "text": "Chàng ghé sát làn môi vào tai nàng thì thầm ra lệnh rằng hãy phối hợp diễn một màn kịch ân ái mặn nồng để đánh lạc hướng tai mắt rình mò của kẻ thù xung quanh phủ đệ.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u44_2",
+          "text": "Hiểu được tình thế nguy hiểm ngàn cân treo sợi tóc, A Sửu lập tức bắt nhịp hùa theo, cất lên tiếng nũng nịu ngọt ngào như rót mật vào tai vị thế tử tuấn tú.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u44_3",
+          "text": "Kẻ theo dõi bên ngoài nghe thấy những thanh âm thân mật tình tứ liền tin chắc mọi chuyện êm đẹp, vội vã rút lui trong đêm tối để bẩm báo lại cho kẻ chủ mưu đứng sau giật dây.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1914.84,
+      "source_end": 1959.38,
+      "visual_intent": "Diễn biến tập 1 đoạn 1915s-1959s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1915.84,
+          "source_end": 1928.6,
+          "weight": 1.0,
+          "speech_unit_id": "u44_1"
+        },
+        {
+          "source_start": 1930.02,
+          "source_end": 1942.78,
+          "weight": 1.0,
+          "speech_unit_id": "u44_2"
+        },
+        {
+          "source_start": 1944.2,
+          "source_end": 1956.96,
+          "weight": 1.0,
+          "speech_unit_id": "u44_3"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "narration": [
+        {
+          "id": "u45_1",
+          "text": "Khi bóng kẻ địch đã hoàn toàn đi xa, hai người lập tức tách nhau ra giữ khoảng cách an toàn, ánh mắt nhìn nhau chứa chan sự đề phòng và những toan tính vô cùng sâu xa.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u45_2",
+          "text": "Một liên minh sinh tồn bất đắc dĩ giữa chàng thế tử trùng sinh phục hồi sức mạnh và nàng thiên kim giả mạo xuất thân từ đáy xã hội chính thức được thiết lập vững chắc.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u45_3",
+          "text": "Cả hai con người này đều mang trong mình những bí mật động trời cần che giấu và cùng đối mặt với những kẻ thù hiểm ác đang rình rập muốn dồn họ vào chỗ chết không toàn thây.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 1959.38,
+      "source_end": 2003.91,
+      "visual_intent": "Diễn biến tập 1 đoạn 1959s-2004s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1960.38,
+          "source_end": 1973.14,
+          "weight": 1.0,
+          "speech_unit_id": "u45_1"
+        },
+        {
+          "source_start": 1974.56,
+          "source_end": 1987.32,
+          "weight": 1.0,
+          "speech_unit_id": "u45_2"
+        },
+        {
+          "source_start": 1988.73,
+          "source_end": 2001.49,
+          "weight": 1.0,
+          "speech_unit_id": "u45_3"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "narration": [
+        {
+          "id": "u46_1",
+          "text": "Cùng thời điểm đó tại Thừa An Bá phủ, Quân Đại sau khi trút bỏ được gánh nặng của cuộc hôn sự xung hỷ quái ác thì đang ung dung ngồi thưởng thức trà thơm bánh ngọt trong phòng.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u46_2",
+          "text": "Ả ta vô cùng đắc ý tự mãn cho rằng nước cờ tráo người của mình quá đỗi hoàn hảo, vừa giữ được thân thể ngọc ngà vừa tống khứ được kẻ có gương mặt giống hệt mình đi xa xứ.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u46_3",
+          "text": "Nhưng người tính chẳng bằng trời tính, ả không thể nào ngờ được rằng việc đẩy A Sửu đi thay mình chính là nhát dao chí mạng tự tay chặt đứt tương lai của chính bản thân.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2003.91,
+      "source_end": 2048.44,
+      "visual_intent": "Diễn biến tập 1 đoạn 2004s-2048s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2004.91,
+          "source_end": 2017.67,
+          "weight": 1.0,
+          "speech_unit_id": "u46_1"
+        },
+        {
+          "source_start": 2019.09,
+          "source_end": 2031.85,
+          "weight": 1.0,
+          "speech_unit_id": "u46_2"
+        },
+        {
+          "source_start": 2033.26,
+          "source_end": 2046.02,
+          "weight": 1.0,
+          "speech_unit_id": "u46_3"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "narration": [
+        {
+          "id": "u47_1",
+          "text": "Trong căn phòng thờ gia tộc âm u khói hương nghi ngút, Bá phu nhân quỳ sụp trước bài vị tổ tiên bật khóc nức nở thảm thiết vì nỗi dằn vặt tội lỗi suốt bao nhiêu năm chôn giấu.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u47_2",
+          "text": "Ký ức kinh hoàng của mười sáu năm về trước hiện về như một cuốn phim quay chậm: cảnh tượng tráo đổi hai đứa trẻ sơ sinh trong một đêm mưa gió bão bùng sấm chớp rền vang.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u47_3",
+          "text": "Đứa trẻ mang dòng máu huyết thống chính thống cao quý của Thừa An Bá phủ thực chất lại chính là Ngụy Nhiêu, tức A Sửu cô gái gánh dạ hương nghèo khó ngày hôm nay.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2048.44,
+      "source_end": 2092.97,
+      "visual_intent": "Diễn biến tập 1 đoạn 2048s-2093s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2049.44,
+          "source_end": 2062.2,
+          "weight": 1.0,
+          "speech_unit_id": "u47_1"
+        },
+        {
+          "source_start": 2063.62,
+          "source_end": 2076.38,
+          "weight": 1.0,
+          "speech_unit_id": "u47_2"
+        },
+        {
+          "source_start": 2077.79,
+          "source_end": 2090.55,
+          "weight": 1.0,
+          "speech_unit_id": "u47_3"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "narration": [
+        {
+          "id": "u48_1",
+          "text": "Còn Quân Đại, đứa con gái được cưng chiều nâng niu như ngọc như ngà suốt bao năm qua thực chất chỉ là đứa con hoang của bà cô bên ngoại tráo vào để nhận vơ danh phận vinh hoa.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u48_2",
+          "text": "Bá phu nhân toàn thân run rẩy sợ hãi một ngày nào đó sự thật bị phơi bày ra ánh sáng công lý, gia tộc sẽ tan nát và bản thân bà sẽ không còn mặt mũi nào xuống suối vàng nhìn tổ tiên.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u48_3",
+          "text": "Bi kịch trớ trêu thay khi chính tay kẻ giả mạo lại tống khứ người thừa kế danh chính ngôn thuận vào thẳng vòng tay quyền lực của vị thế tử hiển hách nhất triều đình.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2092.97,
+      "source_end": 2137.5,
+      "visual_intent": "Diễn biến tập 1 đoạn 2093s-2138s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2093.97,
+          "source_end": 2106.73,
+          "weight": 1.0,
+          "speech_unit_id": "u48_1"
+        },
+        {
+          "source_start": 2108.15,
+          "source_end": 2120.91,
+          "weight": 1.0,
+          "speech_unit_id": "u48_2"
+        },
+        {
+          "source_start": 2122.32,
+          "source_end": 2135.08,
+          "weight": 1.0,
+          "speech_unit_id": "u48_3"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "narration": [
+        {
+          "id": "u49_1",
+          "text": "Đúng là người tính không bằng trời tính, tưởng đâu bày mưu tính kế đẩy người ta vào chỗ chết ai ngờ lại vô tình tạo cơ hội cho chim phượng hoàng đích thực tái sinh từ đống tro tàn.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u49_2",
+          "text": "Khán giả theo dõi đến phân đoạn này chỉ biết vỗ đùi đánh đét khen ngợi biên kịch quay xe quá gắt, quả báo đến tuy có phần muộn màng nhưng chắc chắn sẽ đến nơi đến chốn.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u49_3",
+          "text": "Tập đầu tiên đã hoàn thành việc thiết lập bàn cờ nhân vật một cách vô cùng xuất sắc, dọn đường cho những màn cung đấu trả đòn rực lửa gay cấn ở các tập tiếp theo.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2137.5,
+      "source_end": 2182.03,
+      "visual_intent": "Diễn biến tập 1 đoạn 2138s-2182s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2138.5,
+          "source_end": 2151.26,
+          "weight": 1.0,
+          "speech_unit_id": "u49_1"
+        },
+        {
+          "source_start": 2152.68,
+          "source_end": 2165.44,
+          "weight": 1.0,
+          "speech_unit_id": "u49_2"
+        },
+        {
+          "source_start": 2166.85,
+          "source_end": 2179.61,
+          "weight": 1.0,
+          "speech_unit_id": "u49_3"
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "narration": [
+        {
+          "id": "u50_1",
+          "text": "Sáng sớm hôm sau, tin tức chấn động về việc thế tử Anh Quốc Công hồi tỉnh thần kỳ sau đêm tân hôn lập tức lan truyền khắp toàn bộ kinh thành phồn hoa như một cơn lốc xoáy dữ dội.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u50_2",
+          "text": "Từ quan viên cho đến thứ dân ai nấy đều trầm trồ ca tụng nhị tiểu thư Thừa An Bá phủ quả nhiên mang số mệnh đại cát đại lợi, vừa bước chân vào cửa là mang lại sinh khí dồi dào.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u50_3",
+          "text": "Tin lành chấn động bay về Thừa An Bá phủ khiến Quân Đại đang nhâm nhi điểm tâm nghe xong mà sặc trà suýt nghẹn chết vì kinh hoàng bàng hoàng tột độ không dám tin vào tai mình.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2182.03,
+      "source_end": 2226.56,
+      "visual_intent": "Diễn biến tập 1 đoạn 2182s-2227s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2183.03,
+          "source_end": 2195.79,
+          "weight": 1.0,
+          "speech_unit_id": "u50_1"
+        },
+        {
+          "source_start": 2197.21,
+          "source_end": 2209.97,
+          "weight": 1.0,
+          "speech_unit_id": "u50_2"
+        },
+        {
+          "source_start": 2211.38,
+          "source_end": 2224.14,
+          "weight": 1.0,
+          "speech_unit_id": "u50_3"
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "narration": [
+        {
+          "id": "u51_1",
+          "text": "Ả ta bàng hoàng nhận ra mình vừa tự tay dâng tặng vị trí thế tử phi quyền quý và người chồng đẹp trai tài giỏi ngút ngàn cho một con nhỏ gánh dạ hương hèn hạ mà ả khinh bỉ.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u51_2",
+          "text": "Cơn ghen tức điên cuồng và hối hận muộn màng trào dâng trong lòng khiến Quân Đại phát điên, lập tức toan tính những thủ đoạn đê hèn mới để tìm cách lật tẩy và triệt hạ A Sửu.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u51_3",
+          "text": "Từ vị thế của kẻ chủ động ban phát số phận cho người khác, nay ả ta đã biến thành kẻ thua cuộc thảm hại, nơm nớp lo sợ bị lật ngược tình thế và mất trắng mọi thứ trong tay.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2226.56,
+      "source_end": 2271.09,
+      "visual_intent": "Diễn biến tập 1 đoạn 2227s-2271s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2227.56,
+          "source_end": 2240.32,
+          "weight": 1.0,
+          "speech_unit_id": "u51_1"
+        },
+        {
+          "source_start": 2241.74,
+          "source_end": 2254.5,
+          "weight": 1.0,
+          "speech_unit_id": "u51_2"
+        },
+        {
+          "source_start": 2255.91,
+          "source_end": 2268.67,
+          "weight": 1.0,
+          "speech_unit_id": "u51_3"
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "narration": [
+        {
+          "id": "u52_1",
+          "text": "Trong khi đó tại Anh Quốc Công phủ bề thế, A Sửu bắt đầu đón nhận sự kính trọng từ đám gia nhân hầu cận và sự đón tiếp nồng hậu chân tình của các bậc trưởng bối trong phủ.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u52_2",
+          "text": "Nàng tuyệt nhiên không hề tự mãn hay kiêu ngạo vì bước lên mây xanh, trái lại vẫn luôn giữ thái độ khiêm nhường lễ phép, cẩn trọng trong từng lời ăn tiếng nói và cử chỉ thường nhật.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u52_3",
+          "text": "Sự khôn khéo, hiểu chuyện và tinh tế vượt bậc của nàng nhanh chóng chiếm trọn thiện cảm của Lão phu nhân nhà chồng, củng cố vững chắc nền móng địa vị của nàng trong gia tộc quyền uy.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2271.09,
+      "source_end": 2315.62,
+      "visual_intent": "Diễn biến tập 1 đoạn 2271s-2316s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2272.09,
+          "source_end": 2284.85,
+          "weight": 1.0,
+          "speech_unit_id": "u52_1"
+        },
+        {
+          "source_start": 2286.27,
+          "source_end": 2299.03,
+          "weight": 1.0,
+          "speech_unit_id": "u52_2"
+        },
+        {
+          "source_start": 2300.44,
+          "source_end": 2313.2,
+          "weight": 1.0,
+          "speech_unit_id": "u52_3"
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "narration": [
+        {
+          "id": "u53_1",
+          "text": "Lục Trạc âm thầm quan sát người vợ mới cưới suốt cả ngày trời, càng nhìn chàng càng nhận thấy người con gái này toát lên khí chất bất phàm và bản lĩnh kiên cường hiếm có trong thiên hạ.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u53_2",
+          "text": "Chàng biết chắc chắn thân thế của nàng ẩn chứa uẩn khúc vô cùng lớn, nhưng tạm thời chàng quyết định giữ thái độ im lặng để xem nàng sẽ tiếp tục diễn xuất màn kịch này ra sao.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u53_3",
+          "text": "Mối quan hệ phu thê giữa hai con người tài ba dần chuyển biến từ sự đối đầu nghi ngờ sang sự tôn trọng, đồng cảm và thấu hiểu ngầm sâu sắc qua từng ánh mắt trao nhau.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2315.62,
+      "source_end": 2360.16,
+      "visual_intent": "Diễn biến tập 1 đoạn 2316s-2360s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2316.62,
+          "source_end": 2329.38,
+          "weight": 1.0,
+          "speech_unit_id": "u53_1"
+        },
+        {
+          "source_start": 2330.8,
+          "source_end": 2343.56,
+          "weight": 1.0,
+          "speech_unit_id": "u53_2"
+        },
+        {
+          "source_start": 2344.98,
+          "source_end": 2357.74,
+          "weight": 1.0,
+          "speech_unit_id": "u53_3"
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "narration": [
+        {
+          "id": "u54_1",
+          "text": "Những dòng người tấp nập kéo đến chúc mừng đôi tân lang tân nương mang lại bầu không khí hân hoan rộn ràng khắp phủ đệ sau chuỗi ngày ảm đạm dài dằng dặc vì bệnh tật tang tóc.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u54_2",
+          "text": "Nhạc hỷ rộn rã lại một lần nữa trỗi khúc hoan ca, báo hiệu một chương mới rực rỡ đầy vinh quang sắp sửa mở ra cho số phận của cô gái nghèo từng mang cái tên xấu xí A Sửu.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u54_3",
+          "text": "Từ đáy bùn đen tăm tối của xã hội bước thẳng lên đỉnh cao danh vọng hào môn, hành trình của nàng chỉ mới bắt đầu nhưng đã mang đầy đủ dáng dấp của một thiên truyền kỳ bất hủ.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2360.16,
+      "source_end": 2404.69,
+      "visual_intent": "Diễn biến tập 1 đoạn 2360s-2405s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2361.16,
+          "source_end": 2373.92,
+          "weight": 1.0,
+          "speech_unit_id": "u54_1"
+        },
+        {
+          "source_start": 2375.34,
+          "source_end": 2388.1,
+          "weight": 1.0,
+          "speech_unit_id": "u54_2"
+        },
+        {
+          "source_start": 2389.51,
+          "source_end": 2402.27,
+          "weight": 1.0,
+          "speech_unit_id": "u54_3"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "narration": [
+        {
+          "id": "u55_1",
+          "text": "Cái giá của chiếc trâm vàng năm xưa từng là mầm mống cho sự phản bội đê hèn, nay đã được quy đổi bằng cả một cuộc đời mới rực rỡ nơi kẻ ác phải run sợ còn người lương thiện được đền đáp xứng đáng.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u55_2",
+          "text": "Quân Đại đứng từ xa nhìn cỗ xe ngựa quyền quý đi qua trước mắt mà cắn nát cả môi dưới chảy máu, chính thức tuyên chiến trong bóng tối một mất một còn với người chị em sinh đôi.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u55_3",
+          "text": "Cuộc chiến sinh tử giữa hai đóa hoa song sinh cùng chung một gương mặt nhưng khác biệt hoàn toàn về tâm can và cốt cách hứa hẹn sẽ làm nổ tung màn ảnh ở những tập phim gay cấn tiếp theo.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2404.69,
+      "source_end": 2449.22,
+      "visual_intent": "Diễn biến tập 1 đoạn 2405s-2449s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2405.69,
+          "source_end": 2418.45,
+          "weight": 1.0,
+          "speech_unit_id": "u55_1"
+        },
+        {
+          "source_start": 2419.87,
+          "source_end": 2432.63,
+          "weight": 1.0,
+          "speech_unit_id": "u55_2"
+        },
+        {
+          "source_start": 2434.04,
+          "source_end": 2446.8,
+          "weight": 1.0,
+          "speech_unit_id": "u55_3"
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "narration": [
+        {
+          "id": "u56_1",
+          "text": "Tập 1 của Gả Kim Thoa khép lại bằng một phân cảnh tuyệt đẹp khi Lục Trạc mỉm cười dịu dàng đưa bàn tay đỡ lấy A Sửu bước xuống từng bậc thềm trước sự chứng kiến ngưỡng mộ của toàn thể bá quan.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u56_2",
+          "text": "Ánh nắng ban mai rực rỡ ấm áp chiếu rọi lên tà áo đỏ thêu hoa phượng của nàng tân thế tử phi mới, rạng ngời, kiêu hãnh và uy nghi như một bậc mẫu nghi thiên hạ thực thụ.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u56_3",
+          "text": "Một cái kết không thể nào viên mãn và trọn vẹn hơn cho tập phim mở màn, vừa thỏa mãn tâm lý háo hức của người xem vừa gieo rắc vô số sự tò mò chờ đợi cho chặng đường dài phía trước.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2449.22,
+      "source_end": 2493.75,
+      "visual_intent": "Diễn biến tập 1 đoạn 2449s-2494s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2450.22,
+          "source_end": 2462.98,
+          "weight": 1.0,
+          "speech_unit_id": "u56_1"
+        },
+        {
+          "source_start": 2464.4,
+          "source_end": 2477.16,
+          "weight": 1.0,
+          "speech_unit_id": "u56_2"
+        },
+        {
+          "source_start": 2478.57,
+          "source_end": 2491.33,
+          "weight": 1.0,
+          "speech_unit_id": "u56_3"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "narration": [
+        {
+          "id": "u57_1",
+          "text": "Tiếng hát hào hùng đầy bi tráng và da diết của ca khúc chủ đề mang tên Tá Danh Nhập Cục do nam ca sĩ Lưu Vũ Ninh thể hiện vang lên đưa tập đầu tiên của bộ phim dần đi vào hồi kết.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u57_2",
+          "text": "Từng câu từ lời ca sâu lắng như khắc họa trọn vẹn số phận nghiệt ngã nhưng quật cường của những kiếp người tráo đổi thân phận trong vòng xoáy quyền mưu tranh đoạt ngôi báu.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u57_3",
+          "text": "Một bộ phim cổ trang gia đấu xuất sắc hiếm hoi và chỉn chu bậc nhất của năm nay mà bất kỳ mọt phim chân chính nào cũng tuyệt đối không nên bỏ lỡ dù chỉ một giây phút nào.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2493.75,
+      "source_end": 2538.28,
+      "visual_intent": "Diễn biến tập 1 đoạn 2494s-2538s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2494.75,
+          "source_end": 2507.51,
+          "weight": 1.0,
+          "speech_unit_id": "u57_1"
+        },
+        {
+          "source_start": 2508.93,
+          "source_end": 2521.69,
+          "weight": 1.0,
+          "speech_unit_id": "u57_2"
+        },
+        {
+          "source_start": 2523.1,
+          "source_end": 2535.86,
+          "weight": 1.0,
+          "speech_unit_id": "u57_3"
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "narration": [
+        {
+          "id": "u58_1",
+          "text": "Trước khi bước chân vào phủ Anh Quốc Công, Lục Trạc vốn dĩ đã là vị tướng quân bách chiến bách thắng lừng lẫy sa trường, từng khiến quân địch nghe danh là hồn xiêu phách lạc.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u58_2",
+          "text": "Vết thương trúng tên độc hiểm ác trên chiến trường thực chất là một âm mưu ám hại vô cùng tinh vi và thâm độc xuất phát từ chính những thế lực ngầm trong nội bộ triều đình cài cắm.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u58_3",
+          "text": "Sự hồi tỉnh bất ngờ và ngoạn mục của chàng không chỉ làm đảo lộn hoàn toàn kế hoạch đen tối của kẻ thù mà còn vô tình biến nàng thê tử mới cưới thành mục tiêu bảo vệ hàng đầu của chàng.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2538.28,
+      "source_end": 2582.81,
+      "visual_intent": "Diễn biến tập 1 đoạn 2538s-2583s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2539.28,
+          "source_end": 2552.04,
+          "weight": 1.0,
+          "speech_unit_id": "u58_1"
+        },
+        {
+          "source_start": 2553.46,
+          "source_end": 2566.22,
+          "weight": 1.0,
+          "speech_unit_id": "u58_2"
+        },
+        {
+          "source_start": 2567.63,
+          "source_end": 2580.39,
+          "weight": 1.0,
+          "speech_unit_id": "u58_3"
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "narration": [
+        {
+          "id": "u59_1",
+          "text": "Ngay trong đêm tân hôn đầu tiên đầy biến động, Lục Trạc đã bí mật ra ám hiệu cho thuộc hạ thân tín trong bóng tối âm thầm điều tra toàn bộ chân tướng và lai lịch của nàng dâu mới.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u59_2",
+          "text": "Chàng nhận thấy từng hành vi cử chỉ của A Sửu tuy rất mực đoan trang lễ giáo nhưng ánh mắt lại luôn toát lên vẻ cảnh giác cao độ và sự nhạy bén của một loài báo săn mồi lão luyện.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u59_3",
+          "text": "Rõ ràng đây không phải là một vị tiểu thư khuê các mềm yếu chỉ biết cầm kỳ thi họa và ru rú trong chốn hậu phòng son rỗi để người khác định đoạt số phận của mình.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2582.81,
+      "source_end": 2627.34,
+      "visual_intent": "Diễn biến tập 1 đoạn 2583s-2627s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2583.81,
+          "source_end": 2596.57,
+          "weight": 1.0,
+          "speech_unit_id": "u59_1"
+        },
+        {
+          "source_start": 2597.99,
+          "source_end": 2610.75,
+          "weight": 1.0,
+          "speech_unit_id": "u59_2"
+        },
+        {
+          "source_start": 2612.16,
+          "source_end": 2624.92,
+          "weight": 1.0,
+          "speech_unit_id": "u59_3"
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "narration": [
+        {
+          "id": "u60_1",
+          "text": "Về phần nàng A Sửu, sáng sớm thức dậy nàng đã chủ động xắn cao tay áo bước vào gian bếp nấu một nồi canh bồi bổ thượng hạng thơm phức cho phu quân đang trong thời gian dưỡng thương phục hồi.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u60_2",
+          "text": "Mùi canh thơm lừng ngào ngạt lan tỏa khắp sân viện khiến đám đầu bếp kỳ cựu gia truyền trong phủ cũng phải tròn xoe đôi mắt thán phục tay nghề nấu nướng điêu luyện tài tình.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u60_3",
+          "text": "Họ đâu biết rằng ở quê nhà lam lũ, tài nấu nướng sinh tồn khéo léo của nàng đã được tôi luyện bền bỉ qua hàng ngàn bữa cơm đạm bạc chắt chiu từng cọng rau để nuôi dưỡng mẹ già ốm yếu.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2627.34,
+      "source_end": 2671.88,
+      "visual_intent": "Diễn biến tập 1 đoạn 2627s-2672s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2628.34,
+          "source_end": 2641.1,
+          "weight": 1.0,
+          "speech_unit_id": "u60_1"
+        },
+        {
+          "source_start": 2642.52,
+          "source_end": 2655.28,
+          "weight": 1.0,
+          "speech_unit_id": "u60_2"
+        },
+        {
+          "source_start": 2656.7,
+          "source_end": 2669.46,
+          "weight": 1.0,
+          "speech_unit_id": "u60_3"
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "narration": [
+        {
+          "id": "u61_1",
+          "text": "Lục Trạc húp trọn bát canh nóng hổi đậm đà, cảm giác một luồng chân khí ấm áp dễ chịu lan tỏa khắp kinh mạch toàn thân giúp vết thương sâu mau chóng hồi phục lành lặn.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u61_2",
+          "text": "Chàng mỉm cười trêu chọc nàng rằng không ngờ nhị tiểu thư Thừa An Bá phủ danh gia vọng tộc vừa giỏi làm thê tử hiền thục lại vừa có tài nấu nướng siêu hạng như một đầu bếp trứ danh.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u61_3",
+          "text": "A Sửu liếc xéo chàng một cái sắc sảo rồi hóm hỉnh đáp rằng nếu chàng còn dám nghi ngờ lòng dạ chân thành của thiếp thì lần sau canh sẽ được nêm thêm một thìa ớt bột cay xé lưỡi cho chàng nếm thử.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2671.88,
+      "source_end": 2716.41,
+      "visual_intent": "Diễn biến tập 1 đoạn 2672s-2716s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2672.88,
+          "source_end": 2685.64,
+          "weight": 1.0,
+          "speech_unit_id": "u61_1"
+        },
+        {
+          "source_start": 2687.06,
+          "source_end": 2699.82,
+          "weight": 1.0,
+          "speech_unit_id": "u61_2"
+        },
+        {
+          "source_start": 2701.23,
+          "source_end": 2713.99,
+          "weight": 1.0,
+          "speech_unit_id": "u61_3"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "narration": [
+        {
+          "id": "u62_1",
+          "text": "Bên ngoài khuôn viên phủ Anh Quốc Công uy nghi, các thế lực thù địch bắt đầu rục rịch chuyển động ngấm ngầm khi đón nhận hung tin vị chiến thần trẻ tuổi đã thần kỳ mở mắt bình phục khỏe mạnh.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u62_2",
+          "text": "Những bức mật thư đen chứa đầy toan tính hiểm độc được bí mật chuyển giao đi trong đêm tối, báo hiệu một cơn bão táp cung đình kinh thiên động địa chuẩn bị đổ ập xuống đầu đôi tân lang tân nương trẻ tuổi.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u62_3",
+          "text": "Một cuộc đấu trí không cân sức nơi hậu viện thâm sâu và chốn triều đình gió tanh mưa máu chính thức kéo cờ khai cuộc với những nước cờ cân não đến nghẹt thở từng phút giây.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2716.41,
+      "source_end": 2760.94,
+      "visual_intent": "Diễn biến tập 1 đoạn 2716s-2761s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2717.41,
+          "source_end": 2730.17,
+          "weight": 1.0,
+          "speech_unit_id": "u62_1"
+        },
+        {
+          "source_start": 2731.59,
+          "source_end": 2744.35,
+          "weight": 1.0,
+          "speech_unit_id": "u62_2"
+        },
+        {
+          "source_start": 2745.76,
+          "source_end": 2758.52,
+          "weight": 1.0,
+          "speech_unit_id": "u62_3"
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "narration": [
+        {
+          "id": "u63_1",
+          "text": "A Sửu đứng lặng lẽ bên khung cửa sổ ngắm nhìn bầu trời kinh thành lộng gió mây ngàn, bàn tay khẽ siết chặt chiếc khăn thêu kỷ vật quý giá mà mẹ nuôi đã trao cho nàng trước ngày lên đường xuất giá.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u63_2",
+          "text": "Nàng tự nhủ với cõi lòng mình rằng dù phong ba bão táp ngoài kia có dữ dội và tàn khốc đến đâu, nàng cũng sẽ kiên cường đứng vững như bàn thạch để bảo vệ gia đình và người thân yêu nhất của mình.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u63_3",
+          "text": "Ánh mắt nàng bừng sáng ngọn lửa quyết tâm rực cháy, sẵn sàng đạp bằng mọi chông gai cạm bẫy hiểm trở để cùng phu quân viết nên thiên huyền thoại hiển hách của riêng mình.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2760.94,
+      "source_end": 2805.47,
+      "visual_intent": "Diễn biến tập 1 đoạn 2761s-2805s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2761.94,
+          "source_end": 2774.7,
+          "weight": 1.0,
+          "speech_unit_id": "u63_1"
+        },
+        {
+          "source_start": 2776.12,
+          "source_end": 2788.88,
+          "weight": 1.0,
+          "speech_unit_id": "u63_2"
+        },
+        {
+          "source_start": 2790.29,
+          "source_end": 2803.05,
+          "weight": 1.0,
+          "speech_unit_id": "u63_3"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "narration": [
+        {
+          "id": "u64_1",
+          "text": "Chiếc trâm vàng định mệnh năm nào từng là mồi lửa khởi nguồn cho sự phản bội và tráo đổi số phận, nay lại trở thành chiếc chìa khóa vạn năng mở toang cánh cửa danh vọng rực rỡ cho nàng bước vào hào môn.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u64_2",
+          "text": "Quân Đại ngỡ mình là kẻ giăng bẫy tài ba khôn ngoan nhất thiên hạ, nhưng rốt cuộc ả ta chỉ là một con cờ vô tình dâng tặng cả tương lai xán lạn và giang sơn hiển hách cho người khác hưởng trọn.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u64_3",
+          "text": "Màn kết tập một quá đỗi mãn nhãn và thuyết phục khiến người xem phải trầm trồ vỗ tay tán thưởng không ngớt, vô cùng háo hức chờ đón những màn lật kèo nảy lửa và trừng phạt kẻ ác ở các tập tiếp theo.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2805.47,
+      "source_end": 2850.0,
+      "visual_intent": "Diễn biến tập 1 đoạn 2805s-2850s",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2806.47,
+          "source_end": 2819.23,
+          "weight": 1.0,
+          "speech_unit_id": "u64_1"
+        },
+        {
+          "source_start": 2820.65,
+          "source_end": 2833.41,
+          "weight": 1.0,
+          "speech_unit_id": "u64_2"
+        },
+        {
+          "source_start": 2834.82,
+          "source_end": 2847.58,
+          "weight": 1.0,
+          "speech_unit_id": "u64_3"
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "narration": "Tập một Gả Kim Thoa có nhịp phim nhanh gọn, mâu thuẫn thế gả thiết lập sắc nét và diễn xuất phân thân của Điền Hi Vi cực kỳ lôi cuốn. Màu phim sang trọng cùng âm nhạc hoành tráng tạo cảm giác điện ảnh rõ rệt. Đây chắc chắn là tác phẩm cổ trang gia đấu đáng xem nhất thời điểm hiện tại cho các mọt phim cung đấu.",
+      "source_start": 2850.0,
+      "source_end": 2912.15,
+      "visual_intent": "Đánh giá tổng quan chất lượng diễn xuất, kịch bản và màu phim tập 1",
+      "target_duration": null,
+      "keep_original_audio": false,
+      "section": "assessment",
+      "shots": [
+        {
+          "source_start": 2855.0,
+          "source_end": 2875.0,
+          "weight": 1.0,
+          "speech_unit_id": null
+        },
+        {
+          "source_start": 2880.0,
+          "source_end": 2905.0,
+          "weight": 1.0,
+          "speech_unit_id": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "data": {
+    "editType": "default",
+    "infoStickerId": "",
+    "is_ai_lyric": 0,
+    "is_aimusic_mv": 0,
+    "is_use_ai_image_generation": 0,
+    "is_use_ai_video_generation": 0,
+    "is_use_aimusic_bgm": 0,
+    "is_use_aimusic_vocal": 0,
+    "is_use_graph_chart": 0,
+    "is_use_jichuang_mode_in_ai_writer": 0,
+    "is_use_relight": 0,
+    "is_use_vc_sing_clone": 1,
+    "is_use_voice_clone": "0",
+    "motion_blur_cnt": 0,
+    "musicId": "",
+    "os": "windows",
+    "product": "vicut",
+    "stickerId": "",
+    "videoEffectId": "",
+    "videoId": "ff4adc3e-93b4-4d72-a5e1-e7912a2f1006",
+    "videoParams": {
+      "be": 0,
+      "ef": 0,
+      "ft": 0,
+      "ma": 0,
+      "me": 0,
+      "mu": 0,
+      "re": 0,
+      "sp": 0,
+      "st": 0,
+      "te": 0,
+      "tx": 0,
+      "v": 0,
+      "vs": 0
+    }
+  },
+  "source_platform": "desktop",
+  "source_type": "vicut"
+}

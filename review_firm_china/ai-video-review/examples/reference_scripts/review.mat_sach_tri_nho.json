@@ -1,0 +1,712 @@
+{
+  "title": "Mất Sạch Trí Nhớ Nhưng Lại Vớ Được Anh Người Yêu Cực Phẩm | Review Nấm Mốc Style",
+  "source_video": "D:\\workplace_make_firm\\SrcVideo\\Mất sạch trí nhớ nhưng lại vớ được anh người yêu cực phẩm.mp4",
+  "segments": [
+    {
+      "id": 1,
+      "narration": [
+        {
+          "id": "u101",
+          "text": "Vừa mở mắt tỉnh dậy trong bệnh viện, cô nàng đã được bác sĩ tặng ngay một combo sét đánh ngang tai.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u102",
+          "text": "Mất trí nhớ phân ly, không tên tuổi, không nghề nghiệp và ngay cả dấu vân tay cũng bay màu luôn.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u103",
+          "text": "Sau đó cô nàng nhìn vào gương tự khen hàng họ ok phết, có cơ bụng thế này sao không vào showbiz luôn đi.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u104",
+          "text": "Nghe mấy bà bác xúi đập đầu vào tường để kích hoạt lại trí nhớ, cô nàng liền lấy đà đập trán côm cốp rồi lăn đùng ra ngất xỉu lần hai.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 0.0,
+      "source_end": 160.0,
+      "visual_intent": "Tai nạn, mất trí nhớ và pha tự kích hoạt bộ nhớ đi vào lòng đất",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 2.0,
+          "source_end": 15.0,
+          "weight": 1.0,
+          "speech_unit_id": "u101"
+        },
+        {
+          "source_start": 15.0,
+          "source_end": 35.0,
+          "weight": 1.0,
+          "speech_unit_id": "u102"
+        },
+        {
+          "source_start": 60.0,
+          "source_end": 90.0,
+          "weight": 1.0,
+          "speech_unit_id": "u103"
+        },
+        {
+          "source_start": 110.0,
+          "source_end": 125.0,
+          "weight": 1.0,
+          "speech_unit_id": "u104"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "narration": [
+        {
+          "id": "u201",
+          "text": "Giữa lúc đang lo lắng sắp bị đưa vào trung tâm bảo trợ, thì một anh chàng võ sĩ mặt mày lem luốc lù lù bước vào.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u202",
+          "text": "Anh ta dõng dạc tuyên bố mình là Jang Tae-ha, bạn trai yêu nhau hai năm sắp cưới của cô.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u203",
+          "text": "Lại còn tiết lộ cô vốn là thợ phụ nấu kẹo mạch nha ở xưởng kẹo của bà nội anh.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u204",
+          "text": "Eun-sae chỉ biết cười trừ trong bất lực vì chưa thể thẩm thấu nổi câu chuyện cọc đi tìm trâu này.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 160.0,
+      "source_end": 600.0,
+      "visual_intent": "Màn nhận vơ bạn trai cực phẩm 2 năm sắp cưới",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 165.0,
+          "source_end": 180.0,
+          "weight": 1.0,
+          "speech_unit_id": "u201"
+        },
+        {
+          "source_start": 180.0,
+          "source_end": 200.0,
+          "weight": 1.0,
+          "speech_unit_id": "u202"
+        },
+        {
+          "source_start": 200.0,
+          "source_end": 230.0,
+          "weight": 1.0,
+          "speech_unit_id": "u203"
+        },
+        {
+          "source_start": 230.0,
+          "source_end": 260.0,
+          "weight": 1.0,
+          "speech_unit_id": "u204"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "narration": [
+        {
+          "id": "u301",
+          "text": "Về quê chưa được bao lâu, cô nàng liền lén đi khám tâm thần để tìm lại lai lịch.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u302",
+          "text": "Gặp anh viện trưởng định ga-lăng xoay người một trăm tám mươi độ che mưa nhưng làm lố thành compa ba trăm sáu mươi độ hắt ướt sũng người.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u303",
+          "text": "Đã vậy Tae-ha ở nhà còn cặm cụi vẽ ba quả táo dặn người yêu ăn đủ ba bữa như chăm em bé.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u304",
+          "text": "Ngay cả bà thầy bói khét tiếng cũng phải muối mặt đến tận nhà trả lại tiền quẻ vì phán trật lất.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 600.0,
+      "source_end": 2400.0,
+      "visual_intent": "Khám thần kinh xoay dù 360 độ và bữa sáng 3 quả táo",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 1800.0,
+          "source_end": 1815.0,
+          "weight": 1.0,
+          "speech_unit_id": "u301"
+        },
+        {
+          "source_start": 1815.0,
+          "source_end": 1835.0,
+          "weight": 1.0,
+          "speech_unit_id": "u302"
+        },
+        {
+          "source_start": 2360.0,
+          "source_end": 2380.0,
+          "weight": 1.0,
+          "speech_unit_id": "u303"
+        },
+        {
+          "source_start": 2380.0,
+          "source_end": 2400.0,
+          "weight": 1.0,
+          "speech_unit_id": "u304"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "narration": [
+        {
+          "id": "u401",
+          "text": "Nhận thấy người yêu buồn chán, Tae-ha liền rủ cô lái xe máy đi hóng gió ngắm hoa anh đào.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u402",
+          "text": "Vừa chạm vào tay lái, bản năng tổ lái trỗi dậy phóng vèo vèo như phim Hồng Kông khiến anh chàng ngồi sau ôm eo run bần bật.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u403",
+          "text": "Tại tiệc mừng thọ tám mươi tuổi, bà nội liền đút ngay một cục kẹo mạch nha để chặn họng bà thím nhiều chuyện lại.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u404",
+          "text": "Không khí xóm làng tuy ồn ào nhưng ấm áp khiến Eun-sae dần mở lòng với mái ấm nơi đây.",
+          "emotion": "calm",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 2400.0,
+      "source_end": 3600.0,
+      "visual_intent": "Tổ lái hoa anh đào và tiệc mừng thọ 80 tuổi của bà nội",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 3000.0,
+          "source_end": 3015.0,
+          "weight": 1.0,
+          "speech_unit_id": "u401"
+        },
+        {
+          "source_start": 3015.0,
+          "source_end": 3040.0,
+          "weight": 1.0,
+          "speech_unit_id": "u402"
+        },
+        {
+          "source_start": 3560.0,
+          "source_end": 3580.0,
+          "weight": 1.0,
+          "speech_unit_id": "u403"
+        },
+        {
+          "source_start": 3580.0,
+          "source_end": 3600.0,
+          "weight": 1.0,
+          "speech_unit_id": "u404"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "narration": [
+        {
+          "id": "u501",
+          "text": "Cậu đàn em Kang-rok trốn về quê tìm đại ca, biến bữa nhậu thành thung lũng tình yêu phát cơm tró ngập mặt.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u502",
+          "text": "Người ta thì cưng chiều bóc tôm đút tận mồm, còn cậu lính què thì ngồi lột tôm móng tay dính đầy vỏ thấy mà ngứa mắt.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u503",
+          "text": "Eun-sae hăm hở vào bếp tập nấu kẹo mạch nha, nhưng vừa chạm tay vào nồi sôi thì nóng quá làm rơi luôn cây gáo quý của bà.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u504",
+          "text": "Trong khi đó tại Seoul, ông trùm Baek Sang-gil đấm vỡ màn hình máy tính bảng khi phát hiện Tae-ha đang che giấu công tố viên.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 3600.0,
+      "source_end": 5400.0,
+      "visual_intent": "Tiệc bóc tôm phát cơm tró và sự rình rập của Baek Sang-gil",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 4500.0,
+          "source_end": 4515.0,
+          "weight": 1.0,
+          "speech_unit_id": "u501"
+        },
+        {
+          "source_start": 4515.0,
+          "source_end": 4535.0,
+          "weight": 1.0,
+          "speech_unit_id": "u502"
+        },
+        {
+          "source_start": 4535.0,
+          "source_end": 4555.0,
+          "weight": 1.0,
+          "speech_unit_id": "u503"
+        },
+        {
+          "source_start": 5380.0,
+          "source_end": 5400.0,
+          "weight": 1.0,
+          "speech_unit_id": "u504"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "narration": [
+        {
+          "id": "u601",
+          "text": "Nghe lỏm ba bà thím buôn chuyện tưởng Tae-ha nuôi mình vì thương hại, Eun-sae tủi thân bỏ lên ủy ban xin đi nơi khác.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u602",
+          "text": "Tae-ha liền phóng xe như hỏa tiễn, phi thân qua hàng rào ủy ban như vận động viên nhảy cao để giữ cô lại.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u603",
+          "text": "Khi bước vào nhà thi đấu boxing nhìn bờ vai rộng của Tae-ha, ký ức tuổi học trò của Eun-sae bỗng lóe sáng.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u604",
+          "text": "Hóa ra chàng trai đoạt huy chương vàng năm ấy mà cô từng thầm thương trộm nhớ lại chính là anh chàng trước mặt.",
+          "emotion": "calm",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 5400.0,
+      "source_end": 7200.0,
+      "visual_intent": "Nhảy rào ủy ban và mảnh ghép tình đầu trên sàn boxing",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 6300.0,
+          "source_end": 6315.0,
+          "weight": 1.0,
+          "speech_unit_id": "u601"
+        },
+        {
+          "source_start": 6315.0,
+          "source_end": 6340.0,
+          "weight": 1.0,
+          "speech_unit_id": "u602"
+        },
+        {
+          "source_start": 7160.0,
+          "source_end": 7180.0,
+          "weight": 1.0,
+          "speech_unit_id": "u603"
+        },
+        {
+          "source_start": 7180.0,
+          "source_end": 7200.0,
+          "weight": 1.0,
+          "speech_unit_id": "u604"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "narration": [
+        {
+          "id": "u701",
+          "text": "Sóng gió ập đến khi băng đảng Baek Sang-gil dẫn quân bao vây làng quê truy cùng đuổi tận.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u702",
+          "text": "Tae-ha đưa Eun-sae lên cano thoát thân, còn mình một mình ở lại đối đầu với biển lửa bến cảng.",
+          "emotion": "excited",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u703",
+          "text": "Chấn động từ vụ nổ kinh hoàng kích hoạt tế bào thần kinh, giúp toàn bộ ký ức công tố viên Go Ji-won ùa về trong đầu cô.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u704",
+          "text": "Để trả thù, đám giang hồ chặn đường hầm tông xe dã man khiến người chị thân thiết của Tae-ha nguy kịch tính mạng.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 7200.0,
+      "source_end": 9000.0,
+      "visual_intent": "Biển lửa bến cảng thức tỉnh ký ức và vụ tông xe đường hầm",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 8100.0,
+          "source_end": 8115.0,
+          "weight": 1.0,
+          "speech_unit_id": "u701"
+        },
+        {
+          "source_start": 8115.0,
+          "source_end": 8135.0,
+          "weight": 1.0,
+          "speech_unit_id": "u702"
+        },
+        {
+          "source_start": 8135.0,
+          "source_end": 8155.0,
+          "weight": 1.0,
+          "speech_unit_id": "u703"
+        },
+        {
+          "source_start": 8970.0,
+          "source_end": 9000.0,
+          "weight": 1.0,
+          "speech_unit_id": "u704"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "narration": [
+        {
+          "id": "u801",
+          "text": "Go Eun-sae danh chính ngôn thuận trở lại vai trò công tố viên, phối hợp cảnh sát giăng lưới vây bắt toàn bộ đường dây tội phạm.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u802",
+          "text": "Bí mật đau lòng nhất ba mươi hai năm trước hé lộ, mẹ Tae-ha từng bế con trốn đi vì không muốn con giống người cha xã hội đen.",
+          "emotion": "calm",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u803",
+          "text": "Đối đầu trên đỉnh đồi, Baek Sang-gil chĩa súng vào đầu Tae-ha nhưng chợt nhận ra con trai cũng có thói quen ăn món canh tương ớt giống mình.",
+          "emotion": "suspense",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u804",
+          "text": "Trong phút hối hận muộn màng, ông trùm buông tay đẩy con trai ra rồi tự kết liễu đời mình để chấm dứt mối nghiệp duyên.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 9000.0,
+      "source_end": 10600.0,
+      "visual_intent": "Sự thật huyết thống 32 năm trước và kết thúc nghiệp duyên",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 9900.0,
+          "source_end": 9920.0,
+          "weight": 1.0,
+          "speech_unit_id": "u801"
+        },
+        {
+          "source_start": 9920.0,
+          "source_end": 9940.0,
+          "weight": 1.0,
+          "speech_unit_id": "u802"
+        },
+        {
+          "source_start": 10500.0,
+          "source_end": 10520.0,
+          "weight": 1.0,
+          "speech_unit_id": "u803"
+        },
+        {
+          "source_start": 10520.0,
+          "source_end": 10545.0,
+          "weight": 1.0,
+          "speech_unit_id": "u804"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "narration": [
+        {
+          "id": "u901",
+          "text": "Sau khi bão táp qua đi, bà thầy bói làng quyết định đổi nghề sang bói bài Tarot để kiếm cơm cho hợp thời đại.",
+          "emotion": "punchline",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u902",
+          "text": "Còn Go Eun-sae quyết định rời chốn thị phi Seoul, quay trở về làng kẹo kéo tổ chức đám cưới thực sự với Tae-ha.",
+          "emotion": "normal",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        },
+        {
+          "id": "u903",
+          "text": "Từ một lời nói dối vụng về để che chở cho nhau, cả hai đã viết nên một chuyện tình keo sơn ngọt ngào như những mẻ kẹo mạch nha của bà nội.",
+          "emotion": "calm",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 10600.0,
+      "source_end": 10830.0,
+      "visual_intent": "Bà thầy bói đổi nghề Tarot và cái kết viên mãn tình giả thành thật",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "story",
+      "shots": [
+        {
+          "source_start": 10600.0,
+          "source_end": 10620.0,
+          "weight": 1.0,
+          "speech_unit_id": "u901"
+        },
+        {
+          "source_start": 10800.0,
+          "source_end": 10815.0,
+          "weight": 1.0,
+          "speech_unit_id": "u902"
+        },
+        {
+          "source_start": 10815.0,
+          "source_end": 10830.0,
+          "weight": 1.0,
+          "speech_unit_id": "u903"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "narration": [
+        {
+          "id": "u1001",
+          "text": "Mất sạch trí nhớ nhưng lại vớ được anh người yêu cực phẩm là một tác phẩm rom-com xuất sắc, vừa mang lại tiếng cười giòn giã vừa chạm đến trái tim bằng tình cảm chân thành và diễn xuất ăn ý của cặp đôi diễn viên chính. Một bộ phim giải trí cực kỳ đáng xem và xứng đáng điểm mười trọn vẹn cho những ngày cuối tuần thư giãn.",
+          "emotion": "serious",
+          "rate_percent": null,
+          "pitch_hz": null,
+          "volume_percent": null,
+          "pause_before_ms": null,
+          "pause_after_ms": null
+        }
+      ],
+      "source_start": 10830.0,
+      "source_end": 10862.0,
+      "visual_intent": "Khung hình làng quê bình yên làm nền cho đánh giá tác phẩm",
+      "target_duration": null,
+      "keep_original_audio": true,
+      "section": "assessment",
+      "shots": [
+        {
+          "source_start": 10835.0,
+          "source_end": 10850.0,
+          "weight": 1.0,
+          "speech_unit_id": "u1001"
+        }
+      ]
+    }
+  ]
+}

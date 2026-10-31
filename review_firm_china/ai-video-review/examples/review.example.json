@@ -1,0 +1,24 @@
+{
+  "title": "Demo kỹ thuật: màu sắc cũng muốn lên sóng",
+  "source_video": "input/videos/test_synthetic.mp4",
+  "segments": [
+    {
+      "id": 1,
+      "section": "story",
+      "narration": "Vừa bật video, bảng màu đã chiếm sóng như thể cả hộp bút cùng xin vai chính. Hình thì chạy, tiếng thì ngân, còn nhiệm vụ của chúng ta là kiểm tra xem lời kể có theo kịp cảnh hay không. Một buổi tổng duyệt trước khi phim thật lên sân khấu.",
+      "source_start": 0,
+      "source_end": 40,
+      "visual_intent": "Test pattern chuyển động với lời kể vui về bản chạy thử.",
+      "keep_original_audio": true
+    },
+    {
+      "id": 2,
+      "section": "assessment",
+      "narration": "Bản thử này được cái rõ hình, rõ tiếng, nhưng nội dung thì vẫn đang chờ diễn viên chính. Xem để kiểm tra kỹ thuật là ổn; muốn giữ chân khán giả, bản thật cần câu chuyện hấp dẫn và vài câu đùa đúng chỗ.",
+      "source_start": 40,
+      "source_end": 60,
+      "visual_intent": "Đánh giá ưu điểm và giới hạn của bản demo, không kể tiếp câu chuyện.",
+      "keep_original_audio": true
+    }
+  ]
+}

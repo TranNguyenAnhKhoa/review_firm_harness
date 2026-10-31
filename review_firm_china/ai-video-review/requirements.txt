@@ -1,0 +1,10 @@
+edge-tts==7.2.8
+zerotts==0.1.5
+# OpenCV is a direct dependency in SceneDetect 0.7; the old [opencv] extra was removed.
+scenedetect==0.7.1
+opencv-python==5.0.0.93
+pydantic==2.13.5
+PyYAML==6.0.3
+demucs==4.1.0
+torch==2.5.1
+sympy==1.13.1

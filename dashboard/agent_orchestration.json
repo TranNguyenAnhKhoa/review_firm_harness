@@ -1,0 +1,54 @@
+{
+  "default_assignments": {
+    "1": {
+      "stage_id": 1,
+      "stage_name": "Source Intake & Video Discovery",
+      "agent_id": "scenedetect_agent",
+      "mode": "autonomous",
+      "notes": "Tự động phân tích metadata video gốc (duration, fps, resolution) và phân bổ ngân sách 40-50%."
+    },
+    "2": {
+      "stage_id": 2,
+      "stage_name": "READ (Vision & Timeline Extraction)",
+      "agent_id": "antigravity_desktop",
+      "mode": "ui_handoff",
+      "notes": "Sử dụng Antigravity Desktop gửi video local qua loopback, trích xuất timeline.md đối chiếu."
+    },
+    "3": {
+      "stage_id": 3,
+      "stage_name": "WRITE (Editorial Script & Narration)",
+      "agent_id": "chatgpt_pro",
+      "mode": "manual_handoff",
+      "notes": "ChatGPT Pro viết review.json theo schema với SpeechUnits, nhãn cảm xúc và đúng 1 đoạn assessment 15s."
+    },
+    "4": {
+      "stage_id": 4,
+      "stage_name": "MEASURE & ZeroTTS Speech Synthesis",
+      "agent_id": "zerotts_baotrang",
+      "mode": "autonomous",
+      "notes": "Tổng hợp giọng Bảo Trang offline, decode PCM WAV 48kHz stereo và đo thời lượng thực tế."
+    },
+    "5": {
+      "stage_id": 5,
+      "stage_name": "Shot Fitting & EDL Timeline",
+      "agent_id": "montage_edl_agent",
+      "mode": "autonomous",
+      "notes": "Căn chỉnh shot hình khớp với speech_unit_id, điều tiết slowdown nhịp phim và xuất CapCut."
+    },
+    "6": {
+      "stage_id": 6,
+      "stage_name": "FFmpeg Render & Video Assembly",
+      "agent_id": "ffmpeg_render",
+      "mode": "autonomous",
+      "notes": "Render song song từng chunk MKV, canvas 1920x1080 30fps, ducking nhạc nền và ghép video cuối."
+    },
+    "7": {
+      "stage_id": 7,
+      "stage_name": "QC & Compliance Certification",
+      "agent_id": "qc_certifier",
+      "mode": "autonomous",
+      "notes": "Kiểm định giải mã H.264/AAC, xác thực tỷ lệ 40-50% và đoạn kết 10-20s theo chuẩn workplace."
+    }
+  },
+  "job_overrides": {}
+}

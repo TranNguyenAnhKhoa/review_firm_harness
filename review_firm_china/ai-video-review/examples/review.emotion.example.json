@@ -1,0 +1,40 @@
+{
+  "title": "Emotion Test — ngôi nhà và cú giật mình",
+  "source_video": "input/videos/test_synthetic.mp4",
+  "segments": [
+    {
+      "id": 1,
+      "section": "story",
+      "source_start": 0,
+      "source_end": 40,
+      "narration": [
+        {
+          "text": "Anh ta bước vào căn phòng.",
+          "emotion": "normal"
+        },
+        {
+          "text": "Nhưng mọi thứ đã biến mất.",
+          "emotion": "suspense"
+        },
+        {
+          "text": "Và rồi cánh cửa phía sau bất ngờ bật tung!",
+          "emotion": "excited"
+        },
+        {
+          "text": "Chủ nhà chưa xuất hiện, nhưng khách đã muốn xin phép về trước.",
+          "emotion": "punchline"
+        }
+      ],
+      "visual_intent": "Synthetic test pattern; lời kể minh họa, không mô tả phim thật.",
+      "keep_original_audio": false
+    },
+    {
+      "id": 2,
+      "section": "assessment",
+      "source_start": 40,
+      "source_end": 60,
+      "narration": "Bản thử này có nhịp kể thay đổi, giúp phân biệt lúc bí ẩn với lúc hành động. Tuy nhiên, giọng tổng hợp vẫn chưa thay được diễn xuất của người thật. Cách đọc này hợp video review nhanh, nhưng cần nghe lại để chỉnh những câu nhấn chưa tự nhiên.",
+      "keep_original_audio": false
+    }
+  ]
+}

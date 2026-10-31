@@ -1,0 +1,20 @@
+# Overlay merged with config.yaml; select this file using --config.
+tts:
+  provider: zerotts
+  voice: maichi
+  rate: "+0%"
+  pitch: "+0Hz"
+  zerotts:
+    revision: c2bfbd67dc648cac455077333f7cf5c18a2e3bb4
+    local_files_only: true
+    cache_dir: data/models/zerotts
+    threads: 4
+  presets:
+    normal: {pitch_hz: 0}
+    suspense: {pitch_hz: 0}
+    excited: {pitch_hz: 0}
+    serious: {pitch_hz: 0}
+    punchline: {pitch_hz: 0}
+    calm: {pitch_hz: 0}
+  natural_variation:
+    pitch_jitter_hz: 0

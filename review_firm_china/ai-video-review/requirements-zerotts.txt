@@ -1,0 +1,2 @@
+# Local Vietnamese TTS, also included in requirements.txt as the default backend.
+zerotts==0.1.5
