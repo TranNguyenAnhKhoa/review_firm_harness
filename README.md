@@ -13,33 +13,40 @@ từng bước, duyệt kết quả, chạy và dừng.
 6 QC         kiểm tra thời lượng/codec, giải mã toàn bộ -> jobs/<job>/final_review.mp4
 ```
 
-Bản Windows cũ (`review_firm_china/`, `dashboard/`) vẫn nằm nguyên ở nhánh `main`.
+Bản Windows cũ (`review_firm_china/`, `dashboard/`) giữ ở tag `windows-legacy`.
 
-## Cài đặt (một lần, không cần sudo)
+## Cài đặt: clone rồi chạy một lệnh
 
 ```bash
 git clone https://github.com/TranNguyenAnhKhoa/review_firm_harness.git
-cd review_firm_harness && git checkout linux-rebuild
-./setup.sh
+cd review_firm_harness && ./setup.sh
 ```
 
-`setup.sh` làm 4 việc:
+Lần đầu mất khoảng 5-10 phút (tải model 870 MB và, nếu máy thiếu, Python/FFmpeg). Không cần sudo.
+`setup.sh` làm lần lượt:
 
-1. Tìm Python 3.10-3.13 và FFmpeg có libx264 + libass. Máy thiếu thì tạo môi trường riêng
-   `.tools/conda` (dùng mamba/conda có sẵn, không có thì tự tải micromamba).
-2. Tạo `.venv` và cài gói theo `requirements.txt` (phiên bản ghim cứng).
-3. Tải model ZeroTTS (khoảng 870 MB) vào `models/zerotts/ZeroTTS-c2bfbd67`. Sau đó đọc offline.
-4. Chạy `./run.sh doctor` để báo còn thiếu gì.
+1. Tìm Python 3.10-3.13 và FFmpeg có libx264 + libass. Máy thiếu thì tạo môi trường riêng `.tools/conda`
+   (dùng mamba/conda có sẵn, không có thì tự tải micromamba).
+2. Tạo `.venv`, cài gói theo `requirements.txt` (phiên bản ghim cứng).
+3. Tải model ZeroTTS vào `models/zerotts/ZeroTTS-c2bfbd67`. Sau đó đọc offline.
+4. Tự kiểm tra (`./run.sh doctor`).
+5. Kiểm tra `agy` (Antigravity CLI) đã cài và đăng nhập chưa. READ và WRITE mặc định dùng agy. Chưa đăng
+   nhập thì chạy `agy` một lần cho đăng nhập, rồi chạy lại `./setup.sh`.
+6. Bật dashboard chạy nền tại http://127.0.0.1:8790 (systemd --user, không có thì nohup) và mở trình duyệt
+   nếu máy có màn hình. Dashboard vẫn chạy khi đóng terminal hay logout.
 
-Agent: đăng nhập `agy` (Antigravity CLI) một lần trên máy chạy harness. READ và WRITE mặc định dùng agy.
+Chạy lại `./setup.sh` bất cứ lúc nào (sau `git pull` chẳng hạn): bước đã xong được dùng lại, dashboard
+khởi động lại với code mới, các run đang chạy không bị dừng. Tuỳ chọn: `--port N`, `--no-start`,
+`--no-model`, `--no-agent-check`, `--with-optional` (edge-tts, faster-whisper), `--conda`.
+
 Muốn dùng `claude` hoặc `codex` cho một bước thì đổi trong dashboard (bước READ/WRITE, mục "Agent cho
 bước này") và đăng nhập CLI đó.
 
 ## Dùng
 
 ```bash
-./start.sh                              # dashboard http://127.0.0.1:8790 (Ctrl+C để tắt)
-./service.sh install                    # hoặc chạy nền, sống qua logout (systemd --user hoặc nohup)
+./service.sh status | logs | restart | stop    # dashboard chạy nền do setup.sh bật
+./start.sh                                     # hoặc chạy dashboard ở terminal (Ctrl+C để tắt)
 ```
 
 Trên dashboard: bấm **+ Job mới**, chọn video (hoặc gõ đường dẫn), bấm **Tạo job**. Harness chạy Probe +

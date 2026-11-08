@@ -1,39 +1,62 @@
 #!/usr/bin/env bash
-# One-time setup on Linux (no sudo needed):
-#   1. Python 3.10-3.13 + FFmpeg with libx264/libass. System ones are used when good enough;
-#      otherwise a private conda env is created in .tools/conda (mamba/conda if present, else micromamba
-#      is downloaded into .tools/bin).
-#   2. .venv with pinned packages (requirements.txt, optionally requirements-optional.txt).
-#   3. ZeroTTS model weights (~870 MB) into models/zerotts, so TTS then runs offline.
+# One command after `git clone`: installs everything and starts the dashboard. No sudo needed.
 #
-#   ./setup.sh [--with-optional] [--no-model] [--conda]
-#     --with-optional  also install edge-tts + faster-whisper
-#     --no-model       skip the model download
-#     --conda          always use the private conda env (ignore system Python/FFmpeg)
+#   git clone https://github.com/TranNguyenAnhKhoa/review_firm_harness.git
+#   cd review_firm_harness && ./setup.sh
+#
+# Steps (safe to re-run; finished steps are reused):
+#   1. Python 3.10-3.13 + FFmpeg with libx264/libass/libmp3lame. System ones are used when good enough;
+#      otherwise a private env is created in .tools/conda (mamba/conda if present, else micromamba is
+#      downloaded into .tools/bin).
+#   2. .venv with pinned packages (requirements.txt; --with-optional adds requirements-optional.txt).
+#   3. ZeroTTS model (~870 MB) into models/zerotts, so speech then runs offline.
+#   4. Self-check (./run.sh doctor).
+#   5. agy (Antigravity CLI, the READ/WRITE agent): installed and logged in?
+#   6. Dashboard as a background service (systemd --user, else nohup) on http://127.0.0.1:8790.
+#
+#   ./setup.sh [--with-optional] [--no-model] [--conda] [--no-agent-check] [--no-start] [--port N]
 set -euo pipefail
 cd "$(dirname "$0")"
 ROOT="$PWD"
-WITH_OPTIONAL=0; NO_MODEL=0; FORCE_CONDA=0
-for arg in "$@"; do
-  case "$arg" in
+WITH_OPTIONAL=0; NO_MODEL=0; FORCE_CONDA=0; AGENT_CHECK=1; START=1
+if [ -f .env ]; then set -a; . ./.env; set +a; fi
+PORT="${HARNESS_PORT:-8790}"
+while [ $# -gt 0 ]; do
+  case "$1" in
     --with-optional) WITH_OPTIONAL=1 ;;
     --no-model) NO_MODEL=1 ;;
     --conda) FORCE_CONDA=1 ;;
-    -h|--help) sed -n '2,13p' "$0"; exit 0 ;;
-    *) echo "Tham số lạ: $arg (xem ./setup.sh --help)" >&2; exit 2 ;;
+    --no-agent-check) AGENT_CHECK=0 ;;
+    --no-start) START=0 ;;
+    --port) PORT="$2"; shift ;;
+    -h|--help) sed -n '2,18p' "$0"; exit 0 ;;
+    *) echo "Tham số lạ: $1 (xem ./setup.sh --help)" >&2; exit 2 ;;
   esac
+  shift
 done
-say() { printf '\n== %s\n' "$*"; }
+case "$PORT" in ''|*[!0-9]*) echo "--port phải là số" >&2; exit 2 ;; esac
+export HARNESS_PORT="$PORT"
+STARTED=$(date +%s)
+say() { printf '\n\033[1m== %s\033[0m\n' "$*"; }
+warn() { printf '\033[33m%s\033[0m\n' "$*" >&2; }
+WARNINGS=()
 
 ffmpeg_ok() {  # $1 = ffmpeg binary
   local conf; conf="$("$1" -hide_banner -buildconf 2>/dev/null)" || return 1
   grep -q enable-libx264 <<<"$conf" && grep -q enable-libass <<<"$conf" && grep -q enable-libmp3lame <<<"$conf"
 }
-python_ok() {  # $1 = python binary
+python_ok() {  # $1 = python binary: 3.10-3.13 with a working venv/ensurepip
   "$1" -c 'import sys, venv, ensurepip; sys.exit(0 if (3, 10) <= sys.version_info[:2] <= (3, 13) else 1)' 2>/dev/null
 }
+fetch() {  # $1 = URL, $2 = destination file
+  if command -v curl >/dev/null; then curl -fsSL --retry 3 -o "$2" "$1"
+  elif command -v wget >/dev/null; then wget -q -O "$2" "$1"
+  elif command -v python3 >/dev/null; then python3 -c 'import sys, urllib.request; urllib.request.urlretrieve(sys.argv[1], sys.argv[2])' "$1" "$2"
+  else echo "Cần curl, wget hoặc python3 để tải $1" >&2; return 1; fi
+}
 
-say "1/4 Python và FFmpeg"
+# ---- 1. Python + FFmpeg -----------------------------------------------------------------------------
+say "1/6 Python và FFmpeg"
 PY=""
 if [ "$FORCE_CONDA" = 0 ]; then
   for candidate in python3.12 python3.11 python3.13 python3.10 python3; do
@@ -49,7 +72,7 @@ if [ -z "$PY" ] || [ "$SYSTEM_FFMPEG" = 0 ]; then
   if [ -x "$CONDA_ENV/bin/python" ] && [ -x "$CONDA_ENV/bin/ffmpeg" ] && ffmpeg_ok "$CONDA_ENV/bin/ffmpeg"; then
     echo "Dùng lại môi trường riêng $CONDA_ENV"
   else
-    echo "Hệ thống thiếu Python 3.10-3.13 hoặc FFmpeg có libx264/libass: tạo môi trường riêng $CONDA_ENV"
+    echo "Máy thiếu Python 3.10-3.13 (có venv) hoặc FFmpeg có libx264/libass: tạo môi trường riêng $CONDA_ENV (vài phút)"
     SOLVER=""
     for candidate in micromamba mamba conda "$HOME/miniforge3/bin/mamba" "$HOME/mambaforge/bin/mamba" \
                      "$HOME/miniconda3/bin/conda" "$HOME/anaconda3/bin/conda" "$ROOT/.tools/bin/micromamba"; do
@@ -60,11 +83,17 @@ if [ -z "$PY" ] || [ "$SYSTEM_FFMPEG" = 0 ]; then
       case "$(uname -m)" in
         x86_64) PLATFORM=linux-64 ;;
         aarch64|arm64) PLATFORM=linux-aarch64 ;;
-        *) echo "Không hỗ trợ kiến trúc $(uname -m): cài ffmpeg (có libx264, libass) và python3.11 bằng tay" >&2; exit 1 ;;
+        *) echo "Kiến trúc $(uname -m) chưa hỗ trợ: cài ffmpeg (libx264, libass) và python3.11 rồi chạy lại" >&2; exit 1 ;;
       esac
       echo "Tải micromamba ($PLATFORM) vào .tools/bin"
-      mkdir -p "$ROOT/.tools"
-      curl -fsSL "https://micro.mamba.pm/api/micromamba/$PLATFORM/latest" | tar -xj -C "$ROOT/.tools" bin/micromamba
+      mkdir -p "$ROOT/.tools/bin"
+      fetch "https://micro.mamba.pm/api/micromamba/$PLATFORM/latest" "$ROOT/.tools/micromamba.tar.bz2"
+      if ! tar -xjf "$ROOT/.tools/micromamba.tar.bz2" -C "$ROOT/.tools" bin/micromamba 2>/dev/null; then
+        python3 -c 'import sys, tarfile; tarfile.open(sys.argv[1]).extract("bin/micromamba", sys.argv[2])' \
+          "$ROOT/.tools/micromamba.tar.bz2" "$ROOT/.tools"
+      fi
+      rm -f "$ROOT/.tools/micromamba.tar.bz2"
+      chmod +x "$ROOT/.tools/bin/micromamba"
       SOLVER="$ROOT/.tools/bin/micromamba"
     fi
     export MAMBA_ROOT_PREFIX="$ROOT/.tools/mamba-root"
@@ -74,29 +103,79 @@ if [ -z "$PY" ] || [ "$SYSTEM_FFMPEG" = 0 ]; then
   PY="$CONDA_ENV/bin/python"
 fi
 echo "Python: $PY ($("$PY" --version 2>&1))"
-if [ "$SYSTEM_FFMPEG" = 1 ] && [ ! -x "$CONDA_ENV/bin/ffmpeg" ]; then echo "FFmpeg: $(command -v ffmpeg)"; else echo "FFmpeg: $CONDA_ENV/bin/ffmpeg"; fi
+if [ -x "$CONDA_ENV/bin/ffmpeg" ]; then echo "FFmpeg: $CONDA_ENV/bin/ffmpeg"; else echo "FFmpeg: $(command -v ffmpeg)"; fi
 
-say "2/4 Môi trường Python .venv"
+# ---- 2. .venv ---------------------------------------------------------------------------------------
+say "2/6 Môi trường Python .venv"
 if [ -x .venv/bin/python ] && ! python_ok .venv/bin/python; then
   echo ".venv cũ dùng Python không hỗ trợ: tạo lại"; rm -rf .venv
 fi
 [ -x .venv/bin/python ] || "$PY" -m venv .venv
-.venv/bin/python -m pip install -q --upgrade pip
-.venv/bin/python -m pip install -q -r requirements.txt
-if [ "$WITH_OPTIONAL" = 1 ]; then .venv/bin/python -m pip install -q -r requirements-optional.txt; fi
+.venv/bin/python -m pip install -q --disable-pip-version-check --upgrade pip
+.venv/bin/python -m pip install -q --disable-pip-version-check -r requirements.txt
+if [ "$WITH_OPTIONAL" = 1 ]; then .venv/bin/python -m pip install -q --disable-pip-version-check -r requirements-optional.txt; fi
 .venv/bin/python -m pip check
 
-say "3/4 Model ZeroTTS"
+# ---- 3. model ---------------------------------------------------------------------------------------
+say "3/6 Model ZeroTTS"
 if [ "$NO_MODEL" = 1 ]; then echo "Bỏ qua (--no-model)"; else .venv/bin/python -m harness.setup_model; fi
 
-say "4/4 Kiểm tra"
+# ---- 4. self-check ----------------------------------------------------------------------------------
+say "4/6 Kiểm tra môi trường"
 mkdir -p jobs media
 .venv/bin/python -m harness.monitor.asciify --check
-.venv/bin/python -m harness doctor || true
+.venv/bin/python -m harness doctor || WARNINGS+=("Còn mục THIẾU ở bước 4 (./run.sh doctor)")
+
+# ---- 5. agent ---------------------------------------------------------------------------------------
+say "5/6 Agent agy (READ/WRITE)"
+if ! command -v agy >/dev/null; then
+  warn "Chưa có lệnh agy trên PATH. Cài Antigravity CLI, chạy 'agy' một lần để đăng nhập, rồi chạy lại ./setup.sh."
+  WARNINGS+=("Chưa có agy: READ/WRITE sẽ lỗi cho tới khi cài và đăng nhập (hoặc chọn claude/codex/manual trên dashboard)")
+elif [ "$AGENT_CHECK" = 0 ]; then
+  echo "agy: $(command -v agy) (bỏ qua kiểm tra đăng nhập)"
+else
+  echo "agy: $(command -v agy). Thử một lệnh rất ngắn để kiểm tra đăng nhập..."
+  PROBE="$(cd "$ROOT/media" && timeout 120 agy -p "Reply with the single word OK." --output-format stream-json 2>&1 || true)"
+  if grep -q '"status":"SUCCESS"' <<<"$PROBE"; then
+    echo "agy đã đăng nhập, chạy được ở chế độ nền."
+  else
+    warn "agy chưa chạy được ở chế độ nền:"
+    grep -v '^{' <<<"$PROBE" | tail -3 >&2 || true
+    warn "Chạy 'agy' (tương tác) một lần để đăng nhập, rồi chạy lại ./setup.sh."
+    WARNINGS+=("agy chưa đăng nhập được: READ/WRITE sẽ lỗi")
+  fi
+fi
+
+# ---- 6. dashboard -----------------------------------------------------------------------------------
+say "6/6 Dashboard"
+URL="http://127.0.0.1:$PORT/"
+if [ "$START" = 0 ]; then
+  echo "Bỏ qua (--no-start). Bật bằng: ./start.sh  hoặc  ./service.sh install"
+else
+  ./service.sh install
+  ok=0
+  for _ in $(seq 1 20); do
+    if .venv/bin/python -c 'import sys, urllib.request; urllib.request.urlopen(sys.argv[1], timeout=2)' "${URL}api/overview" 2>/dev/null; then ok=1; break; fi
+    sleep 0.5
+  done
+  if [ "$ok" = 1 ]; then echo "Dashboard đang chạy: $URL"
+    if [ -n "${DISPLAY:-}${WAYLAND_DISPLAY:-}" ] && command -v xdg-open >/dev/null; then
+      (xdg-open "$URL" >/dev/null 2>&1 &) || true
+    fi
+  else warn "Dashboard chưa trả lời ở $URL: xem ./service.sh logs (cổng $PORT bận? chạy lại với --port <số khác>)"
+       WARNINGS+=("Dashboard chưa lên"); fi
+fi
+
+ELAPSED=$(( $(date +%s) - STARTED ))
+say "Xong sau ${ELAPSED}s"
+if [ ${#WARNINGS[@]} -gt 0 ]; then
+  for w in "${WARNINGS[@]}"; do warn "- $w"; done
+fi
 cat <<EOF
 
-Xong. Tiếp theo:
-  ./start.sh                                  dashboard http://127.0.0.1:8790
-  ./run.sh new <ten-job> /duong/dan/phim.mp4  tạo job (hoặc nút "+ Job mới" trên dashboard)
-  ./service.sh install                        chạy dashboard nền (sống qua logout)
+Mở dashboard: $URL
+  Máy này là server từ xa? Trên máy của bạn chạy: ssh -L $PORT:127.0.0.1:$PORT $(whoami)@$(hostname)
+  rồi mở $URL
+Tạo job: nút "+ Job mới" trên dashboard, hoặc ./run.sh new <ten-job> /duong/dan/phim.mp4
+Dashboard chạy nền: ./service.sh status | logs | restart | stop
 EOF

@@ -51,12 +51,22 @@ EOF
 }
 
 case "${1:-}" in
-  install)
+  install)   # (re)install and (re)start, so a re-run picks up new code and settings
     if [ "$BACKEND" = systemd ]; then
       mkdir -p "$UNIT_DIR"; unit > "$UNIT_DIR/$NAME.service"
-      systemctl --user daemon-reload; systemctl --user enable --now "$NAME.service"
-      echo "systemd --user: $NAME.service đang chạy trên http://$HOST:$PORT (sau reboot: loginctl enable-linger $USER)"
+      systemctl --user daemon-reload
+      systemctl --user enable "$NAME.service" >/dev/null 2>&1
+      systemctl --user restart "$NAME.service"
+      if [ "$(loginctl show-user "$USER" -p Linger --value 2>/dev/null)" != yes ]; then
+        loginctl enable-linger "$USER" >/dev/null 2>&1 || true
+      fi
+      if [ "$(loginctl show-user "$USER" -p Linger --value 2>/dev/null)" = yes ]; then
+        echo "systemd --user: $NAME.service chạy trên http://$HOST:$PORT, tự bật lại sau reboot"
+      else
+        echo "systemd --user: $NAME.service chạy trên http://$HOST:$PORT (tự bật sau reboot cần: sudo loginctl enable-linger $USER)"
+      fi
     else
+      "$0" stop >/dev/null 2>&1 || true
       "$0" start
     fi ;;
   start)
