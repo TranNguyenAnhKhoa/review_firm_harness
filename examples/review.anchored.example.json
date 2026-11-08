@@ -1,0 +1,42 @@
+{
+  "title": "Ví dụ định dạng: speech unit có id, shot gắn speech_unit_id",
+  "segments": [
+    {
+      "id": 1,
+      "section": "story",
+      "source_start": 10,
+      "source_end": 40,
+      "visual_intent": "Hành động mở đầu và phản ứng của nhân vật (chỉ minh hoạ định dạng)",
+      "keep_original_audio": true,
+      "narration": [
+        {"id": "s1u1", "text": "Vừa mở màn, cô gái đã đẩy cửa xông vào phòng khách, tay vẫn cầm nguyên chiếc vali.", "emotion": "normal"},
+        {"id": "s1u2", "text": "Cả nhà quay ra nhìn, còn ông bố thì làm rơi luôn tách trà đang uống dở.", "emotion": "punchline"}
+      ],
+      "shots": [
+        {"source_start": 10.0, "source_end": 12.5, "speech_unit_id": "s1u1", "weight": 1},
+        {"source_start": 13.0, "source_end": 15.0, "speech_unit_id": "s1u1", "weight": 1},
+        {"source_start": 16.0, "source_end": 18.5, "speech_unit_id": "s1u1", "weight": 1},
+        {"source_start": 24.0, "source_end": 26.0, "speech_unit_id": "s1u2", "weight": 1},
+        {"source_start": 27.0, "source_end": 30.0, "speech_unit_id": "s1u2", "weight": 1.5}
+      ]
+    },
+    {
+      "id": 2,
+      "section": "assessment",
+      "source_start": 40,
+      "source_end": 60,
+      "visual_intent": "Hình tiêu biểu làm nền cho phần nhận xét",
+      "keep_original_audio": true,
+      "narration": [
+        {"id": "s2u1", "text": "Điểm cuốn của tập này là nhịp kể nhanh và những phản ứng rất đời của cả gia đình.", "emotion": "serious"},
+        {"id": "s2u2", "text": "Mô típ không mới, nhưng ai thích phim gia đình nhẹ nhàng có chút hài thì sẽ thấy dễ xem.", "emotion": "serious"}
+      ],
+      "shots": [
+        {"source_start": 40.0, "source_end": 44.0, "speech_unit_id": "s2u1", "weight": 1},
+        {"source_start": 45.0, "source_end": 49.0, "speech_unit_id": "s2u1", "weight": 1},
+        {"source_start": 50.0, "source_end": 54.0, "speech_unit_id": "s2u2", "weight": 1},
+        {"source_start": 55.0, "source_end": 60.0, "speech_unit_id": "s2u2", "weight": 1}
+      ]
+    }
+  ]
+}

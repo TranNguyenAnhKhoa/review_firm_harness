@@ -1,0 +1,40 @@
+{
+  "stages": {
+    "probe": {
+      "status": "pending"
+    },
+    "read": {
+      "status": "waiting",
+      "output_ready": true,
+      "message": "Timeline cũ từ bản Windows (Antigravity Desktop): đọc rồi duyệt, hoặc chạy lại READ (force)",
+      "metrics": {
+        "analysis_status": "complete",
+        "rows": 10,
+        "clips": 0,
+        "coverage": 1.0
+      }
+    },
+    "write": {
+      "status": "waiting",
+      "output_ready": true,
+      "message": "review.json cũ từ bản Windows (65 segment): duyệt sau khi duyệt READ, hoặc chạy lại WRITE",
+      "metrics": {
+        "segments": 65,
+        "shots": 194,
+        "estimate_seconds": 1384.5,
+        "estimate_ratio": 0.4754
+      }
+    },
+    "measure": {
+      "status": "pending"
+    },
+    "render": {
+      "status": "pending"
+    },
+    "qc": {
+      "status": "pending"
+    }
+  },
+  "gates": {},
+  "run": {}
+}

@@ -1,8 +1,0 @@
-# Separate tracks for manual finishing in CapCut.
-video:
-  preset: veryfast
-subtitle:
-  enabled: false
-render:
-  picture_style:
-    enabled: false

@@ -1,0 +1,10 @@
+# Runtime packages for the repository-owned .venv (Linux, Python 3.10-3.12).
+# Exact pins: service restarts and pipeline runs use the same stack.
+pydantic==2.13.5
+PyYAML==6.0.3
+numpy==2.2.6
+# scenedetect depends on opencv-python (not -headless); one OpenCV only.
+opencv-python==5.0.0.93
+scenedetect==0.7.1
+# Local Vietnamese TTS (ONNX, offline after setup.sh downloads the weights).
+zerotts==0.1.5

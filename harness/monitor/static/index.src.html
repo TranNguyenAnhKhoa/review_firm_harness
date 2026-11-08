@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review Harness</title>
+<link rel="icon" href="data:,">
+<style>
+:root{
+  --bg:#f5f6f8;--grid:#dde1e7;--panel:#ffffff;--panel2:#f0f2f5;--node:#ffffff;--nodeb:#d4d9e1;--fg:#1c2230;--mut:#5d6878;--ln:#dfe3e9;
+  --acc:#2563eb;--accfg:#ffffff;--done:#15803d;--run:#2563eb;--fail:#dc2626;--wait:#b45309;--pend:#94a3b8;--stale:#9333ea;
+  --okbg:#e7f6ec;--errbg:#fdecec;--warnbg:#fdf3e1;--shadow:0 4px 14px rgba(15,23,42,.10);
+  --claude:#c2603f;--agy:#2f6fde;--codex:#0f8f6f;--manual:#6b7280;--zerotts:#7c3aed;--ffmpeg:#0e7490;--local:#64748b;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+:root[data-theme="dark"]{
+  --bg:#141414;--grid:#262626;--panel:#1d1d1f;--panel2:#26262a;--node:#2a2a2c;--nodeb:#3b3b3f;--fg:#e7e7e7;--mut:#a0a0a8;--ln:#38383c;
+  --acc:#4f93f8;--accfg:#ffffff;--done:#3fb950;--run:#4f93f8;--fail:#f85149;--wait:#d29922;--pend:#6e7681;--stale:#bc8cff;
+  --okbg:#10301b;--errbg:#3d1416;--warnbg:#3b2e0a;--shadow:0 6px 18px rgba(0,0,0,.45);
+  --claude:#d97757;--agy:#5b8def;--codex:#10a37f;--manual:#8b93a1;--zerotts:#a78bfa;--ffmpeg:#22a5c9;--local:#8b98ab;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--fg);font:13.5px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif;display:flex;flex-direction:column;overflow:hidden}
+a{color:var(--acc)}
+button,select,input,textarea{font:inherit;color:var(--fg);background:var(--panel2);border:1px solid var(--ln);border-radius:6px;padding:4px 9px;min-width:0}
+button{cursor:pointer}button:hover{border-color:var(--acc)}button:disabled{opacity:.45;cursor:default}
+button.pri{background:var(--acc);border-color:var(--acc);color:var(--accfg);font-weight:600}
+button.ok{border-color:var(--done);color:var(--done);font-weight:600}
+button.danger{border-color:var(--fail);color:var(--fail)}
+button.ghost{background:transparent}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--acc);outline-offset:-1px}
+textarea{width:100%;font-family:var(--mono);font-size:12px;resize:vertical}
+header{display:flex;align-items:center;gap:10px;padding:8px 14px;background:var(--panel);border-bottom:1px solid var(--ln);flex:none;flex-wrap:wrap}
+header h1{font-size:15px;margin:0;font-weight:700;white-space:nowrap;cursor:pointer}
+header .sp{flex:1}
+.mut{color:var(--mut)}.small{font-size:12px}
+.counts{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-size:11px;border-radius:999px;padding:1px 8px;border:1px solid currentColor;white-space:nowrap;display:inline-block;line-height:1.5}
+.c-done{color:var(--done)}.c-running{color:var(--run)}.c-failed{color:var(--fail)}.c-waiting{color:var(--wait)}.c-pending,.c-idle{color:var(--pend)}.c-stopped{color:var(--wait)}.c-stale{color:var(--stale)}
+.eng{font-size:10.5px;border-radius:4px;padding:0 6px;color:#fff;white-space:nowrap;line-height:1.6;display:inline-block}
+.e-claude{background:var(--claude)}.e-agy{background:var(--agy)}.e-codex{background:var(--codex)}.e-manual{background:var(--manual)}.e-zerotts{background:var(--zerotts)}.e-ffmpeg{background:var(--ffmpeg)}.e-local{background:var(--local)}
+#app{flex:1;display:grid;grid-template-columns:1fr 440px;min-height:0}
+#main{position:relative;min-height:0;overflow:hidden}
+#side{background:var(--panel);border-left:1px solid var(--ln);display:flex;flex-direction:column;min-height:0}
+@media (max-width:720px){#jobhead{left:10px;right:10px;top:48px;max-width:none}}
+@media (max-width:1000px){
+  body{overflow:auto}#app{grid-template-columns:1fr;grid-template-rows:auto auto}#main{height:440px}#side{border-left:0;border-top:1px solid var(--ln);min-height:520px}
+}
+/* overview */
+#overview{position:absolute;inset:0;overflow:auto;padding:18px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.card{background:var(--panel);border:1px solid var(--ln);border-radius:10px;padding:12px 14px;cursor:pointer;box-shadow:var(--shadow)}
+.card:hover{border-color:var(--acc)}
+.card h3{margin:0 0 4px;font-size:14px;display:flex;gap:8px;align-items:center}
+.card h3 span.t{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar{display:flex;gap:3px;margin:9px 0 6px}.bar i{flex:1;height:7px;border-radius:3px;background:var(--pend);opacity:.5}
+.bar i.done{background:var(--done);opacity:1}.bar i.running{background:var(--run);opacity:1}.bar i.failed{background:var(--fail);opacity:1}.bar i.waiting{background:var(--wait);opacity:1}.bar i.stopped{background:var(--wait);opacity:.7}.bar i.stale{background:var(--stale);opacity:1}
+.empty{color:var(--mut);padding:50px 10px;text-align:center}
+/* canvas */
+#canvas{position:absolute;inset:0;overflow:hidden;background-color:var(--bg);background-image:radial-gradient(var(--grid) 1px,transparent 1px);background-size:22px 22px;cursor:grab;touch-action:none}
+#canvas.panning{cursor:grabbing}
+#world{position:absolute;left:0;top:0;transform-origin:0 0}
+#edges{position:absolute;left:0;top:0;width:1px;height:1px;overflow:visible;pointer-events:none}
+#edges path{fill:none;stroke:var(--pend);stroke-width:2.2}
+#edges path.done{stroke:var(--done)}#edges path.active{stroke:var(--run);stroke-dasharray:7 6;animation:flow 1s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-13}}
+.gate{position:absolute;transform:translate(-50%,-50%);font-size:10.5px;padding:1px 7px;border-radius:999px;background:var(--panel);border:1px solid var(--wait);color:var(--wait);white-space:nowrap;pointer-events:none}
+.gate.ok{border-color:var(--done);color:var(--done)}
+#tools{position:absolute;left:10px;top:10px;display:flex;gap:6px;z-index:3;flex-wrap:wrap}
+#tools button:not(.pri):not(.danger){background:var(--panel)}
+#hint{position:absolute;left:10px;bottom:8px;color:var(--mut);font-size:11.5px;z-index:3;pointer-events:none}
+#jobhead{position:absolute;right:12px;top:10px;z-index:3;background:var(--panel);border:1px solid var(--ln);border-radius:9px;padding:7px 11px;max-width:min(520px,60%);box-shadow:var(--shadow)}
+#jobhead b{display:block;font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.node{position:absolute;width:268px;background:var(--node);border:1px solid var(--nodeb);border-radius:10px;box-shadow:var(--shadow);cursor:pointer;user-select:none}
+.node.sel{outline:2px solid var(--acc);outline-offset:2px}
+.node.running{box-shadow:0 0 0 2px var(--run),var(--shadow)}
+.node .nh{display:flex;align-items:center;gap:7px;padding:7px 10px;border-bottom:1px solid var(--nodeb);font-weight:650;font-size:12.8px}
+.node .nh .ttl{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--pend);flex:none}
+.dot.done{background:var(--done)}.dot.running{background:var(--run);animation:pulse 1.2s infinite}.dot.failed{background:var(--fail)}.dot.waiting{background:var(--wait)}.dot.stopped{background:var(--wait)}.dot.stale{background:var(--stale)}
+@keyframes pulse{50%{opacity:.25}}
+.node .nb{padding:6px 10px 8px;font-size:12px}
+.row{display:flex;gap:6px;padding:1.5px 0}
+.row .l{color:var(--mut);width:96px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .v{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-variant-numeric:tabular-nums}
+.prog{height:6px;background:var(--panel2);border-radius:3px;overflow:hidden;margin:4px 0 2px}.prog i{display:block;height:100%;background:var(--run)}
+.node .msg{color:var(--mut);font-size:11.5px;margin-top:4px;max-height:48px;overflow:hidden}
+.node .msg.err{color:var(--fail)}
+.node .nf{display:flex;align-items:center;gap:6px;padding:6px 10px;border-top:1px solid var(--nodeb);font-size:11.5px}
+.node .nf .cost{color:var(--mut);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.node .nf button{padding:1px 8px;font-size:11.5px}
+/* sidebar */
+#stabs{display:flex;border-bottom:1px solid var(--ln);flex:none}
+#stabs span{flex:1;text-align:center;padding:9px 0;cursor:pointer;color:var(--mut);border-bottom:2px solid transparent}
+#stabs span.on{color:var(--fg);border-bottom-color:var(--acc);font-weight:600}
+#sbody{flex:1;overflow:auto;padding:12px 15px}
+#sbody h3{margin:0 0 6px;font-size:15px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#sbody h4{margin:16px 0 6px;font-size:11.5px;color:var(--mut);text-transform:uppercase;letter-spacing:.05em}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.kpi{background:var(--panel2);border-radius:8px;padding:8px 10px}.kpi .l{font-size:11px;color:var(--mut)}.kpi .v{font-size:17px;font-weight:650;font-variant-numeric:tabular-nums}.kpi .s{font-size:11px;color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:12px;font-variant-numeric:tabular-nums}
+th,td{text-align:right;padding:4px 6px;border-bottom:1px solid var(--ln);white-space:nowrap}th:first-child,td:first-child{text-align:left}
+th{color:var(--mut);font-weight:500}
+table.kv td{text-align:left;white-space:normal;vertical-align:top;word-break:break-word}table.kv td:first-child{color:var(--mut);width:118px}
+code,.mono{font-family:var(--mono);font-size:11.5px;word-break:break-all}
+pre.log,pre.doc{background:var(--bg);border:1px solid var(--ln);border-radius:7px;padding:9px;font:11.5px/1.45 var(--mono);white-space:pre-wrap;word-break:break-word;margin:6px 0 0;overflow:auto}
+pre.log{height:calc(100vh - 230px);min-height:260px}
+pre.doc{max-height:70vh}
+.box{border:1px solid var(--ln);border-radius:9px;padding:10px;margin:10px 0}
+.box.warn{background:var(--warnbg);border-color:transparent}.box.err{background:var(--errbg);border-color:transparent}.box.ok{background:var(--okbg);border-color:transparent}
+.btns{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:8px}
+.files{display:flex;flex-direction:column;gap:3px;margin:6px 0}
+.files button{text-align:left;font-family:var(--mono);font-size:11.5px;padding:3px 8px;display:flex;gap:8px}
+.files button span.n{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:6px;margin:6px 0}
+.gallery figure{margin:0;cursor:pointer;border:1px solid var(--ln);border-radius:6px;overflow:hidden;background:var(--panel2)}
+.gallery img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover}
+.gallery figcaption{font-size:10.5px;color:var(--mut);padding:2px 5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.field{display:block;margin:7px 0}.field>span{display:block;color:var(--mut);font-size:11.5px;margin-bottom:2px}.field input[type=text],.field select,.field input[type=number]{width:100%}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
+.toast{position:fixed;right:16px;bottom:16px;z-index:50;background:var(--panel);border:1px solid var(--ln);border-left:4px solid var(--acc);border-radius:8px;padding:9px 13px;box-shadow:var(--shadow);max-width:420px}
+.toast.bad{border-left-color:var(--fail)}
+ul.list{margin:4px 0;padding-left:18px}ul.list li{margin:2px 0}
+video,audio{width:100%;margin-top:6px;border-radius:8px;background:#000}
+audio{background:transparent}
+/* modal */
+#modal{position:fixed;inset:0;background:rgba(15,20,30,.5);display:none;align-items:center;justify-content:center;z-index:40;padding:12px}
+#mbox{background:var(--panel);border:1px solid var(--ln);border-radius:12px;width:min(980px,96vw);max-height:92vh;display:flex;flex-direction:column;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+#mhead{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--ln)}#mhead b{font-size:14px;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#mbody{padding:12px 16px;overflow:auto;flex:1}
+#mbody img.full{max-width:100%;display:block;margin:0 auto}
+#mfoot{display:flex;gap:8px;align-items:center;padding:10px 14px;border-top:1px solid var(--ln);flex-wrap:wrap}#mfoot .sp{flex:1}
+.browse div{padding:3px 7px;border-radius:5px;cursor:pointer;font-family:var(--mono);font-size:11.5px;word-break:break-all}.browse div:hover{background:var(--panel2)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="home" title="Danh sách job">Review Harness</h1>
+  <select id="jobsel" title="Chọn job"></select>
+  <button id="newjob" class="pri">+ Job mới</button>
+  <span class="counts" id="counts"></span>
+  <span class="sp"></span>
+  <span class="mut small" id="gen"></span>
+  <button id="sysbtn" class="ghost" title="Kiểm tra môi trường">Hệ thống</button>
+  <button id="theme" class="ghost" title="Đổi giao diện sáng/tối" aria-label="Đổi giao diện sáng/tối">Tối</button>
+</header>
+<div id="app">
+  <div id="main">
+    <div id="overview"></div>
+    <div id="canvas" hidden>
+      <div id="tools"><button id="fit">Vừa màn hình</button><button id="runall" class="pri">Chạy tiếp</button><button id="stopbtn" class="danger" hidden>Dừng</button><span class="mut small" id="zoom" style="align-self:center"></span></div>
+      <div id="jobhead"></div>
+      <div id="world"><svg id="edges"></svg><div id="gates"></div><div id="nodes"></div></div>
+      <div id="hint">Kéo nền để di chuyển &middot; cuộn để phóng to/thu nhỏ &middot; bấm một bước để xem chi tiết</div>
+    </div>
+  </div>
+  <aside id="side"><div id="stabs"><span data-t="detail" class="on">Chi tiết</span><span data-t="log">Log</span><span data-t="job">Job</span></div><div id="sbody"></div></aside>
+</div>
+<div id="modal"><div id="mbox"><div id="mhead"><b id="mtitle"></b><button id="mclose" class="ghost" aria-label="Đóng">Đóng</button></div><div id="mbody"></div><div id="mfoot"></div></div></div>
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const esc = v => String(v == null ? "" : v).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const STAGES = ["probe","read","write","measure","render","qc"];
+const STATUS_VI = {pending:"chờ chạy",running:"đang chạy",done:"xong",waiting:"chờ duyệt",failed:"lỗi",stopped:"đã dừng",skipped:"bỏ qua",idle:"tạm dừng",stale:"cần chạy lại"};
+const S = {overview:null, job:null, detail:null, stage:"probe", tab:"detail", view:{x:30,y:80,k:1}, fitted:false, log:{run:null,offset:0,text:""}, logRun:null};
+
+// ---------- theme (light by default, dark only through the toggle) ----------
+function applyTheme(t){ if(t==="dark") document.documentElement.setAttribute("data-theme","dark"); else document.documentElement.removeAttribute("data-theme"); $("#theme").textContent = t==="dark" ? "Sáng" : "Tối"; }
+let theme = "light"; try { theme = localStorage.getItem("rh-theme") || "light"; } catch(e) {}
+applyTheme(theme);
+$("#theme").onclick = () => { theme = theme==="dark" ? "light" : "dark"; applyTheme(theme); try { localStorage.setItem("rh-theme", theme); } catch(e) {} };
+
+// ---------- helpers ----------
+async function api(path, body){
+  const opt = {headers:{}};
+  if(body !== undefined){ opt.method="POST"; opt.headers["Content-Type"]="application/json"; opt.headers["X-Harness"]="1"; opt.body=JSON.stringify(body); }
+  const r = await fetch(path, opt); const t = await r.text(); let d;
+  try { d = JSON.parse(t); } catch(e) { d = {error:t}; }
+  if(!r.ok) throw new Error(d.error || ("HTTP "+r.status));
+  return d;
+}
+function toast(msg, bad){ const el=document.createElement("div"); el.className="toast"+(bad?" bad":""); el.textContent=msg; document.body.appendChild(el); setTimeout(()=>el.remove(), bad?7000:3500); }
+const fmtS = s => { if(s==null||isNaN(s)) return "-"; s=Math.round(s); const h=Math.floor(s/3600), m=Math.floor(s%3600/60), x=s%60; return (h? h+":"+String(m).padStart(2,"0") : m)+":"+String(x).padStart(2,"0"); };
+const fmtB = b => b==null ? "-" : b>1e9 ? (b/1e9).toFixed(2)+" GB" : b>1e6 ? (b/1e6).toFixed(1)+" MB" : b>1e3 ? (b/1e3).toFixed(0)+" kB" : b+" B";
+const pct = v => v==null ? "-" : (v*100).toFixed(1)+"%";
+const ago = ts => { if(!ts) return ""; const d=(Date.now()/1000-ts); return d<60?"vừa xong":d<3600?Math.floor(d/60)+" phút trước":d<86400?Math.floor(d/3600)+" giờ trước":Math.floor(d/86400)+" ngày trước"; };
+const chip = st => `<span class="chip c-${esc(st)}">${esc(STATUS_VI[st]||st)}</span>`;
+const eng = a => a && a.engine ? `<span class="eng e-${esc(a.engine)}">${esc(a.engine)}${a.model?" / "+esc(a.model):""}</span>` : "";
+const fileUrl = (path) => `/api/jobs/${encodeURIComponent(S.job)}/file?path=${encodeURIComponent(path)}`;
+function stStatus(st){ return st.stale && st.status==="done" ? "stale" : st.status; }
+function usageText(m){ const u=m&&m.usage; if(!u||!u.calls) return ""; return (u.cost_usd?"$"+u.cost_usd.toFixed(2)+" · ":"")+(u.tokens?(u.tokens/1000).toFixed(0)+"k tok · ":"")+fmtS(u.agent_seconds); }
+
+// ---------- routing ----------
+function route(){
+  const m = location.hash.match(/^#\/job\/([a-z0-9_-]+)(?:\/([a-z]+))?/);
+  const job = m ? m[1] : null;
+  if(job !== S.job){ S.job = job; S.detail = null; S.fitted = false; S.log = {run:null,offset:0,text:""}; S.logRun = null; }
+  if(m && m[2] && STAGES.includes(m[2])) S.stage = m[2];
+  $("#overview").hidden = !!job; $("#canvas").hidden = !job;
+  refresh(true);
+}
+window.addEventListener("hashchange", route);
+$("#home").onclick = () => { location.hash = ""; };
+$("#jobsel").onchange = e => { location.hash = e.target.value ? "#/job/"+e.target.value : ""; };
+document.querySelectorAll("#stabs span").forEach(el => el.onclick = () => { S.tab = el.dataset.t; document.querySelectorAll("#stabs span").forEach(x => x.classList.toggle("on", x===el)); renderSide(); });
+
+// ---------- polling ----------
+let busy = false;
+async function refresh(force){
+  if(busy && !force) return; busy = true;
+  try {
+    S.overview = await api("/api/overview");
+    renderHeader();
+    if(S.job){ S.detail = await api("/api/jobs/"+encodeURIComponent(S.job)); renderJob(); }
+    else renderOverview();
+    if(S.tab==="log") await pollLog();
+    if(!S.job || S.tab!=="log") renderSide();
+  } catch(e) { $("#gen").textContent = "mất kết nối: "+e.message; }
+  finally { busy = false; }
+}
+setInterval(() => { if(!document.hidden) refresh(false); }, 2500);
+
+function renderHeader(){
+  const o = S.overview, c = o.counts || {};
+  $("#gen").textContent = "cập nhật "+o.generated.slice(11);
+  $("#counts").innerHTML = [["running","đang chạy"],["waiting","chờ duyệt"],["failed","lỗi"],["done","xong"]].filter(([k])=>c[k]).map(([k,l])=>`<span class="chip c-${k}">${c[k]} ${l}</span>`).join("");
+  const sel = $("#jobsel"), cur = S.job || "";
+  const opts = `<option value="">Tất cả job (${o.jobs.length})</option>` + o.jobs.map(j=>`<option value="${esc(j.job)}">${esc(j.title)} (${esc(j.job)})</option>`).join("");
+  if(sel.dataset.sig !== opts){ sel.innerHTML = opts; sel.dataset.sig = opts; }
+  sel.value = cur;
+}
+
+function renderOverview(){
+  const jobs = S.overview.jobs;
+  if(!jobs.length){ $("#overview").innerHTML = `<div class="empty"><p>Chưa có job nào.</p><p><button class="pri" onclick="newJob()">+ Tạo job đầu tiên</button></p><p class="small">Hoặc dòng lệnh: <code>./run.sh new ten-job /duong/dan/phim.mp4</code></p></div>`; return; }
+  $("#overview").innerHTML = `<div class="cards">` + jobs.map(j => `
+    <div class="card" onclick="location.hash='#/job/${esc(j.job)}'">
+      <h3><span class="t">${esc(j.title)}</span>${chip(j.status)}</h3>
+      <div class="mut small">${esc(j.job)} · ${esc(j.source_name||"")}${j.duration?" · "+fmtS(j.duration):""}${j.source_exists===false?' · <span style="color:var(--fail)">mất video nguồn</span>':""}</div>
+      <div class="bar">${(j.stages||[]).map(s=>`<i class="${esc(stStatus(s))}" title="${esc(s.title)}: ${esc(STATUS_VI[stStatus(s)]||s.status)}"></i>`).join("")}</div>
+      <div class="mut small">${Math.round((j.progress||0)*100)}% · ${esc(ago(j.updated))}${j.final?" · có video cuối":""}</div>
+    </div>`).join("") + `</div>`;
+}
+
+// ---------- pipeline canvas ----------
+const NODE_W = 268, GAP = 64, ROW_H = 300;
+function columns(){ const w = $("#canvas").getBoundingClientRect().width; return w > 1700 ? 6 : w > 720 ? 3 : 2; }
+function nodeRows(st){
+  const m = st.metrics || {}, rows = [];
+  const add = (l, v) => { if(v!==undefined && v!==null && v!=="") rows.push(`<div class="row"><span class="l">${esc(l)}</span><span class="v">${v}</span></div>`); };
+  const prog = (d, t) => t ? `<div class="prog"><i style="width:${Math.min(100,Math.round(100*(d||0)/t))}%"></i></div>` : "";
+  if(st.id==="probe"){ add("Thời lượng", m.duration?fmtS(m.duration)+" ("+m.duration.toFixed(1)+"s)":null); add("Khung hình", m.width?m.width+"x"+m.height+" "+m.fps+" fps":null); add("Review cần", m.total_min?Math.round(m.total_min)+"-"+Math.round(m.total_max)+"s":null); }
+  if(st.id==="read"){ add("Phân tích", esc(m.analysis_status)); add("Dòng / shot", m.rows!=null?m.rows+" / "+m.clips:null); add("Độ phủ", m.coverage!=null?pct(m.coverage):null); add("Cảnh báo", m.warnings&&m.warnings.length?m.warnings.length:null); }
+  if(st.id==="write"){ add("Segment", m.segments!=null?m.segments+" seg · "+(m.shots||0)+" shot":null); add("Ước tính", m.estimate_seconds!=null?fmtS(m.estimate_seconds)+" ("+pct(m.estimate_ratio)+")":null); add("Đánh giá", m.assessment_estimate!=null?"~"+m.assessment_estimate.toFixed(1)+"s":null); add("Tự sửa", m.revised?("vòng "+m.revised):null); }
+  if(st.id==="measure"){ if(m.total) rows.push(prog(m.done,m.total)); add("Tiến độ", m.total?m.done+"/"+m.total+(m.cached?" ("+m.cached+" cache)":""):null); add("Tổng đo", m.review_duration!=null?fmtS(m.review_duration)+" ("+pct(m.source_ratio)+")":null); add("Đánh giá", m.assessment!=null?m.assessment.toFixed(1)+"s":null); add("Kết quả", m.passed===true?'<b style="color:var(--done)">ĐẠT</b>':m.passed===false?'<b style="color:var(--fail)">CHƯA ĐẠT</b>':null); }
+  if(st.id==="render"){ if(m.total) rows.push(prog(m.done,m.total)); add("Phần", m.total?m.done+"/"+m.total+(m.cached?" ("+m.cached+" cache)":""):null); add("Thời lượng", m.duration?fmtS(m.duration):null); add("Khung", m.width?m.width+"x"+m.height:null); }
+  if(st.id==="qc"){ add("Giải mã", m.decode_ok===true?'<b style="color:var(--done)">OK</b>':m.decode_ok===false?'<b style="color:var(--fail)">LỖI</b>':null); add("Thời lượng", m.duration?fmtS(m.duration)+" ("+pct(m.source_ratio)+")":null); add("Dung lượng", m.size_bytes?fmtB(m.size_bytes):null); }
+  return rows.join("");
+}
+function nodeButtons(st){
+  const running = S.detail.running, b = [];
+  const firstWaiting = S.detail.stages.find(x => x.gated && x.status==="waiting" && !x.needs_input);
+  if(st.gated && st.status==="waiting" && !st.needs_input && !running && firstWaiting===st) b.push(`<button class="ok" onclick="event.stopPropagation();gate('${st.id}',true,true)">Duyệt</button>`);
+  if(!running) b.push(`<button onclick="event.stopPropagation();runFrom('${st.id}')" title="Chạy từ bước này">Chạy từ đây</button>`);
+  return b.join("");
+}
+function renderJob(){
+  const d = S.detail;
+  $("#jobhead").innerHTML = `<b>${esc(d.title)}</b><span class="mut small">${esc(d.job)} · ${esc(d.source_name||"")}${d.duration?" · "+fmtS(d.duration):""}</span> ${chip(d.status)}${d.final?` <a class="small" href="${fileUrl("final_review.mp4")}" target="_blank" rel="noopener">video cuối</a>`:""}`;
+  $("#runall").hidden = d.running; $("#stopbtn").hidden = !d.running;
+  const nodes = $("#nodes");
+  const cols = columns();
+  nodes.innerHTML = d.stages.map((st, i) => {
+    const status = stStatus(st);
+    const msg = st.message && !["Xong"].includes(st.message) ? `<div class="msg${st.status==="failed"?" err":""}">${esc(st.message)}</div>` : "";
+    return `<div class="node ${S.stage===st.id?"sel":""} ${st.status==="running"?"running":""}" data-id="${st.id}" style="left:${(i%cols)*(NODE_W+GAP)}px;top:${Math.floor(i/cols)*ROW_H}px">
+      <div class="nh"><span class="dot ${status}"></span><span class="ttl">${i+1}. ${esc(st.title)}</span>${eng(st.agent)}</div>
+      <div class="nb"><div class="row"><span class="l">Trạng thái</span><span class="v">${chip(status)}${st.seconds?' <span class="mut">'+fmtS(st.seconds)+"</span>":""}</span></div>${nodeRows(st)}${msg}</div>
+      <div class="nf"><span class="cost">${esc(usageText(st.metrics))}</span>${nodeButtons(st)}</div></div>`;
+  }).join("");
+  nodes.querySelectorAll(".node").forEach(el => el.onclick = () => { S.stage = el.dataset.id; history.replaceState(null,"","#/job/"+S.job+"/"+S.stage); if(S.tab!=="detail"){ S.tab="detail"; document.querySelectorAll("#stabs span").forEach(x=>x.classList.toggle("on",x.dataset.t==="detail")); } renderJob(); renderSide(); });
+  requestAnimationFrame(drawEdges);
+  if(!S.fitted){ S.fitted = true; requestAnimationFrame(fit); }
+}
+function drawEdges(){
+  const els = [...document.querySelectorAll("#nodes .node")], d = S.detail; if(!d) return;
+  let paths = "", gates = "";
+  for(let i=0;i<els.length-1;i++){
+    const a = els[i], b = els[i+1];
+    const sa = d.stages[i], sb = d.stages[i+1];
+    const cls = sb.status==="running" ? "active" : (sa.status==="done" && !sa.stale ? "done" : "");
+    let path, lx, ly;
+    if(b.offsetTop === a.offsetTop){
+      const x1 = a.offsetLeft + a.offsetWidth, y1 = a.offsetTop + 17, x2 = b.offsetLeft, y2 = b.offsetTop + 17, mx = (x1+x2)/2;
+      path = `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`; lx = mx; ly = y1 - 14;
+    } else {   // wrap to the next row: bottom of a to top of b
+      const x1 = a.offsetLeft + a.offsetWidth/2, y1 = a.offsetTop + a.offsetHeight, x2 = b.offsetLeft + b.offsetWidth/2, y2 = b.offsetTop, my = (y1+y2)/2;
+      path = `M${x1},${y1} C${x1},${my+40} ${x2},${my-40} ${x2},${y2}`; lx = (x1+x2)/2; ly = my;
+    }
+    paths += `<path class="${cls}" d="${path}"/>`;
+    if(sa.gated){ const ok = sa.gate && sa.gate.approved; gates += `<div class="gate ${ok?"ok":""}" style="left:${lx}px;top:${ly}px">${ok?"đã duyệt":"cổng duyệt"}</div>`; }
+  }
+  $("#edges").innerHTML = paths; $("#gates").innerHTML = gates;
+}
+function applyView(){ $("#world").style.transform = `translate(${S.view.x}px,${S.view.y}px) scale(${S.view.k})`; $("#zoom").textContent = Math.round(S.view.k*100)+"%"; }
+function fit(){
+  const els = [...document.querySelectorAll("#nodes .node")]; if(!els.length) return;
+  const c = $("#canvas").getBoundingClientRect();
+  let w = 0, h = 0; els.forEach(e => { w = Math.max(w, e.offsetLeft+e.offsetWidth); h = Math.max(h, e.offsetTop+e.offsetHeight); });
+  const top = c.width < 720 ? 130 : 70;
+  const k = Math.max(.3, Math.min(1.15, (c.width-40)/w, (c.height-top-30)/h));
+  S.view = {k, x:(c.width - w*k)/2, y:Math.max(top,(c.height - h*k)/2+20)}; applyView();
+}
+$("#fit").onclick = fit;
+(function pan(){
+  const cv = $("#canvas"); let start = null;
+  cv.addEventListener("pointerdown", e => { if(e.target.closest(".node,#tools,#jobhead")) return; start = {x:e.clientX, y:e.clientY, vx:S.view.x, vy:S.view.y}; cv.classList.add("panning"); cv.setPointerCapture(e.pointerId); });
+  cv.addEventListener("pointermove", e => { if(!start) return; S.view.x = start.vx + e.clientX - start.x; S.view.y = start.vy + e.clientY - start.y; applyView(); });
+  const end = () => { start = null; cv.classList.remove("panning"); };
+  cv.addEventListener("pointerup", end); cv.addEventListener("pointercancel", end);
+  cv.addEventListener("wheel", e => { e.preventDefault(); const r = cv.getBoundingClientRect(), mx = e.clientX-r.left, my = e.clientY-r.top; const k = Math.max(.3, Math.min(2, S.view.k * (e.deltaY<0?1.1:1/1.1))); S.view.x = mx - (mx-S.view.x)*k/S.view.k; S.view.y = my - (my-S.view.y)*k/S.view.k; S.view.k = k; applyView(); }, {passive:false});
+  let lastCols = 0;
+  window.addEventListener("resize", () => { if(!S.job || !S.detail) return; const c = columns(); if(c !== lastCols){ lastCols = c; renderJob(); } fit(); });
+})();
+applyView();
+
+// ---------- actions ----------
+async function act(path, body, ok){ try { const r = await api(`/api/jobs/${encodeURIComponent(S.job)}/${path}`, body); if(ok) toast(ok); await refresh(true); return r; } catch(e) { toast(e.message, true); } }
+function runFrom(stage){ act("run", {from:stage}, "Đã bắt đầu chạy từ "+stage).then(() => switchTab("log")); }
+function runOnly(stage, force){ act("run", {only:stage, force:!!force}, "Đã bắt đầu "+stage).then(() => switchTab("log")); }
+$("#runall").onclick = () => act("run", {}, "Đã bắt đầu chạy").then(() => switchTab("log"));
+$("#stopbtn").onclick = () => { if(confirm("Dừng run đang chạy? Bước hiện tại sẽ được đánh dấu đã dừng.")) act("stop", {}, "Đã gửi lệnh dừng"); };
+function gate(stage, approved, cont){
+  let note = "";
+  if(!approved){ note = ($("#gatenote")||{}).value || ""; if(!note.trim()){ toast("Ghi lý do từ chối: agent sẽ đọc lý do này khi làm lại", true); return; } }
+  act("gate", {stage, approved, note, continue:!!cont}, approved ? (cont?"Đã duyệt, chạy tiếp":"Đã duyệt") : "Đã từ chối");
+}
+function switchTab(t){ S.tab = t; document.querySelectorAll("#stabs span").forEach(x => x.classList.toggle("on", x.dataset.t===t)); S.log = {run:null,offset:0,text:""}; renderSide(); if(t==="log") pollLog(); }
+
+// ---------- sidebar ----------
+function renderSide(){
+  const body = $("#sbody");
+  if(!S.job || !S.detail){ body.innerHTML = sideOverview(); return; }
+  if(S.tab==="detail") body.innerHTML = sideStage();
+  else if(S.tab==="job") body.innerHTML = sideJob();
+  else if(S.tab==="log") body.innerHTML = sideLog();
+  bindSide();
+}
+function sideOverview(){
+  const o = S.overview; if(!o) return "";
+  const running = o.jobs.filter(j=>j.running);
+  return `<h3>Tổng quan</h3><div class="kpis"><div class="kpi"><div class="l">Job</div><div class="v">${o.jobs.length}</div></div><div class="kpi"><div class="l">Đang chạy</div><div class="v">${running.length}</div></div><div class="kpi"><div class="l">Chờ duyệt</div><div class="v">${o.counts.waiting||0}</div></div><div class="kpi"><div class="l">Có video cuối</div><div class="v">${o.jobs.filter(j=>j.final).length}</div></div></div>
+  <h4>Quy trình</h4><ol class="small" style="padding-left:18px;margin:0">
+  <li><b>Probe</b>: đo video nguồn, tính ngân sách 40-50%.</li><li><b>READ</b>: agent xem phim, ghi <code>timeline.md</code>. Bạn duyệt.</li>
+  <li><b>WRITE</b>: agent viết <code>review.json</code> theo timeline. Bạn duyệt.</li><li><b>MEASURE</b>: ZeroTTS đọc thật, kiểm 40-50% và đánh giá cuối 10-20s; lệch thì gửi WRITE tự sửa.</li>
+  <li><b>RENDER</b>: dựng từng phần theo shot + giọng, ghép.</li><li><b>QC</b>: giải mã toàn bộ, xuất <code>final_review.mp4</code>.</li></ol>
+  <p class="small mut">Phiên bản ${esc(o.version)}. Dòng lệnh: <code>./run.sh status</code>.</p>`;
+}
+function kv(rows){ return `<table class="kv">${rows.filter(r=>r[1]!==undefined&&r[1]!==null&&r[1]!=="").map(([k,v])=>`<tr><td>${esc(k)}</td><td>${v}</td></tr>`).join("")}</table>`; }
+function sideStage(){
+  const d = S.detail, st = d.stages.find(s=>s.id===S.stage) || d.stages[0], m = st.metrics || {};
+  const status = stStatus(st);
+  let h = `<h3>${STAGES.indexOf(st.id)+1}. ${esc(st.title)} ${chip(status)} ${eng(st.agent)}</h3>`;
+  if(st.stale) h += `<div class="box warn small">Đầu vào đã đổi sau lần chạy này: cần chạy lại.</div>`;
+  if(st.message && st.message !== "Xong") h += `<div class="box ${st.status==="failed"?"err":st.status==="waiting"?"warn":""} small">${esc(st.message)}</div>`;
+  if(st.error) h += `<pre class="doc">${esc(st.error)}</pre>`;
+  if(st.gated) h += gateBox(st);
+  if(st.agent && st.agent.engine==="manual" || st.needs_input) h += manualBox(st);
+  h += kv([["Bắt đầu", esc((st.started||"").replace("T"," ").slice(0,19))],["Kết thúc", esc((st.finished||"").replace("T"," ").slice(0,19))],["Thời gian", st.seconds?fmtS(st.seconds):""],["Agent / chi phí", esc(usageText(m))]]);
+  h += stageExtra(st);
+  const warns = m.warnings || m.problems || m.errors || [];
+  if(warns.length) h += `<h4>Cảnh báo</h4><ul class="list small">${warns.map(w=>`<li>${esc(w)}</li>`).join("")}</ul>`;
+  h += filesBlock(st);
+  if(!d.running) h += `<h4>Chạy</h4><div class="btns"><button class="pri" onclick="runFrom('${st.id}')">Chạy từ đây</button><button onclick="runOnly('${st.id}')">Chỉ bước này</button><button onclick="if(confirm('Chạy lại bước này từ đầu? READ/WRITE sẽ gọi agent lại.'))runOnly('${st.id}',true)">Chạy lại (force)</button></div>`;
+  else h += `<div class="box small">Job đang chạy (bước ${esc(d.run && d.run.stage || "")}). Xem tab Log.</div>`;
+  if(st.id==="read"||st.id==="write") h += agentForm(st);
+  return h;
+}
+function gateBox(st){
+  const g = st.gate;
+  const blocked = st.id==="write" && S.detail.stages[1].gated && !(S.detail.stages[1].gate && S.detail.stages[1].gate.approved);
+  if(st.status==="waiting" && !st.needs_input && !S.detail.running && blocked) return `<div class="box warn small">Duyệt READ trước, rồi mới duyệt WRITE.</div>`;
+  if(st.status==="waiting" && !st.needs_input && !S.detail.running){
+    return `<div class="box warn"><b>Cổng duyệt</b><div class="small">Mở file ${st.id==="read"?"timeline.md":"review.json"} bên dưới, đọc kỹ. Duyệt thì pipeline đi tiếp; từ chối thì ghi lý do, lần chạy sau agent làm lại theo lý do đó. Có thể sửa file tay trước khi duyệt.</div>
+      <textarea id="gatenote" rows="3" placeholder="Lý do từ chối / yêu cầu sửa"></textarea>
+      <div class="btns"><button class="ok" onclick="gate('${st.id}',true,true)">Duyệt &amp; chạy tiếp</button><button onclick="gate('${st.id}',true,false)">Chỉ duyệt</button><button class="danger" onclick="gate('${st.id}',false,false)">Từ chối</button></div></div>`;
+  }
+  if(g) return `<div class="box ${g.approved?"ok":"err"} small">${g.approved?"Đã duyệt":"Đã từ chối"} bởi ${esc(g.by)} lúc ${esc((g.at||"").replace("T"," ").slice(0,19))}${g.note?": "+esc(g.note):""}</div>`;
+  return "";
+}
+function manualBox(st){
+  const kind = st.id==="read" ? "timeline" : st.id==="write" ? "review" : null; if(!kind) return "";
+  return `<div class="box"><b>Nhập tay</b><div class="small mut">Dùng prompt <code>${st.id==="read"?"02_read":"03_write"}/request.md</code> với công cụ bạn chọn, rồi dán kết quả (${kind==="timeline"?"Markdown":"JSON"}) vào đây.</div>
+    <textarea id="manualtext" rows="7" placeholder="${kind==="timeline"?"--- request_id: ... ---":"{ title: ..., segments: [...] }"}"></textarea>
+    <div class="btns"><button class="pri" onclick="uploadManual('${kind}')">Lưu file</button><input type="file" id="manualfile" accept="${kind==="timeline"?".md,.txt":".json"}"></div></div>`;
+}
+async function uploadManual(kind){
+  let content = ($("#manualtext")||{}).value || ""; const f = $("#manualfile");
+  if(!content.trim() && f && f.files[0]) content = await f.files[0].text();
+  if(!content.trim()){ toast("Chưa có nội dung", true); return; }
+  act("upload", {kind, content}, "Đã lưu. Bấm Chạy để kiểm tra.");
+}
+function stageExtra(st){
+  const d = S.detail, m = st.metrics || {};
+  if(st.id==="probe" && d.budget) return `<h4>Ngân sách review</h4>${kv([["Tổng", Math.round(d.budget.total_min)+" - "+Math.round(d.budget.total_max)+" s"],["Mục tiêu", Math.round(d.budget.total_target)+" s ("+fmtS(d.budget.total_target)+")"],["Phần kể", Math.round(d.budget.story_target)+" s"],["Đánh giá cuối", d.budget.assessment_min+"-"+d.budget.assessment_max+" s"]])}`;
+  if(st.id==="measure" && d.timing){
+    const t = d.timing; let h = `<div class="kpis"><div class="kpi"><div class="l">Tổng đo</div><div class="v">${fmtS(t.review_duration)}</div><div class="s">${pct(t.source_ratio)} nguồn</div></div><div class="kpi"><div class="l">Đánh giá cuối</div><div class="v">${(t.assessment_narration_duration||0).toFixed(1)}s</div><div class="s">cần 10-20s</div></div></div>`;
+    if(t.errors && t.errors.length) h += `<div class="box err small">${t.errors.map(esc).join("<br>")}</div>`;
+    if(t.segments) h += `<h4>Từng segment</h4><table><tr><th>ID</th><th>Loại</th><th>Lời đọc</th><th>Dựng</th></tr>${t.segments.map(s=>`<tr><td>${s.id}</td><td>${esc(s.section)}</td><td>${s.narration_duration.toFixed(1)}s</td><td>${s.edit_duration.toFixed(1)}s</td></tr>`).join("")}</table>`;
+    return h;
+  }
+  if(st.id==="qc" && d.final) return `<h4>Video cuối</h4><video controls preload="metadata" src="${fileUrl("final_review.mp4")}"></video><div class="small mut">${d.qc&&d.qc.editorial_status?esc(d.qc.editorial_status):""}</div>`
+    + ((st.files||[]).some(f=>f.path==="06_qc/thumbs.jpg") ? `<img src="${fileUrl("06_qc/thumbs.jpg")}" alt="Khung hình rải đều video cuối" style="width:100%;margin-top:8px;border-radius:6px;cursor:pointer" data-open="06_qc/thumbs.jpg" data-kind="image">` : "");
+  return "";
+}
+function filesBlock(st){
+  const files = st.files || []; if(!files.length) return "";
+  const plain = files.filter(f=>!f.group), groups = {};
+  files.filter(f=>f.group).forEach(f => (groups[f.group] = groups[f.group] || []).push(f));
+  let h = `<h4>File</h4><div class="files">${plain.map(f=>`<button data-open="${esc(f.path)}" data-kind="${f.kind}"><span class="n">${esc(f.path)}</span><span class="mut">${fmtB(f.size)}</span></button>`).join("")}</div>`;
+  const label = {proxy:"Proxy cho agent xem", sheets:"Sheet khung hình", strip_sheets:"Sheet phụ đề", keyframes:"Keyframe", audio:"Audio từng segment"};
+  for(const [g, list] of Object.entries(groups)){
+    h += `<h4>${esc(label[g]||g)} (${list.length})</h4>`;
+    if(list[0].kind==="image") h += `<div class="gallery">${list.slice(0,60).map(f=>`<figure data-open="${esc(f.path)}" data-kind="image"><img loading="lazy" src="${fileUrl(f.path)}" alt=""><figcaption>${f.start!=null?fmtS(f.start)+"-"+fmtS(f.end):esc(f.name)}</figcaption></figure>`).join("")}</div>`;
+    else h += `<div class="files">${list.slice(0,200).map(f=>`<button data-open="${esc(f.path)}" data-kind="${f.kind}"><span class="n">${esc(f.name)}${f.start!=null?" ("+fmtS(f.start)+"-"+fmtS(f.end)+")":""}</span><span class="mut">${fmtB(f.size)}</span></button>`).join("")}</div>`;
+  }
+  return h;
+}
+function agentForm(st){
+  const a = st.id==="read" ? S.detail.settings.read : S.detail.settings.write;
+  const opts = ["agy","claude","codex","manual"].map(e=>`<option ${a.engine===e?"selected":""}>${e}</option>`).join("");
+  const eff = ["","low","medium","high","xhigh","max"].map(e=>`<option value="${e}" ${(a.effort||"")===e?"selected":""}>${e||"(mặc định)"}</option>`).join("");
+  return `<h4>Agent cho bước này</h4><div class="grid2"><label class="field"><span>Engine</span><select id="ag_engine">${opts}</select></label><label class="field"><span>Model</span><input type="text" id="ag_model" value="${esc(a.model||"")}" placeholder="(mặc định của CLI)"></label><label class="field"><span>Effort</span><select id="ag_effort">${eff}</select></label></div>
+  <div class="small mut">agy xem được video (proxy); claude/codex xem sheet ảnh + phụ đề. Lưu vào <code>jobs/${esc(S.job)}/config.yaml</code>.</div><div class="btns"><button onclick="saveAgent('${st.id}')">Lưu agent</button></div>`;
+}
+function saveAgent(stage){ const b = {}; b[stage] = {engine:$("#ag_engine").value, model:$("#ag_model").value.trim(), effort:$("#ag_effort").value}; act("config", b, "Đã lưu agent"); }
+function sideJob(){
+  const d = S.detail, s = d.settings, src = d.manifest.source;
+  let h = `<h3>${esc(d.title)} ${chip(d.status)}</h3>`;
+  h += kv([["Job", `<code>${esc(d.job)}</code>`],["Video nguồn", `<code>${esc(src.path)}</code>${d.source_exists===false?' <b style="color:var(--fail)">không thấy file</b>':""}`],["Dung lượng", fmtB(src.size)],["Tạo lúc", esc((d.manifest.created||"").replace("T"," ").slice(0,19))],["Thời lượng", d.duration?fmtS(d.duration):""]]);
+  if(d.final) h += `<h4>Video cuối</h4><video controls preload="metadata" src="${fileUrl("final_review.mp4")}"></video>`;
+  h += `<h4>Cài đặt job</h4><div class="grid2">
+    <label class="field"><span>Giọng đọc</span><select id="cf_voice">${voiceOptions(s.voice)}</select></label>
+    <label class="field"><span>Vòng tự sửa sau MEASURE</span><input type="number" id="cf_rev" min="0" max="5" value="${s.revise_rounds}"></label>
+    <label class="field"><span>Watermark</span><input type="text" id="cf_wm" value="${esc(s.watermark)}"></label>
+    <label class="field"><span>Âm nền gốc (0-1)</span><input type="number" id="cf_bg" min="0" max="1" step="0.01" value="${s.background_volume}"></label></div>
+    <label class="small"><input type="checkbox" id="cf_gread" ${s.gates.includes("read")?"checked":""}> Duyệt sau READ</label> &nbsp; <label class="small"><input type="checkbox" id="cf_gwrite" ${s.gates.includes("write")?"checked":""}> Duyệt sau WRITE</label> &nbsp; <label class="small"><input type="checkbox" id="cf_sub" ${s.subtitles?"checked":""}> Phụ đề lời đọc</label>
+    <div class="btns"><button onclick="saveJob()">Lưu cài đặt</button></div>`;
+  h += `<h4>Lịch sử</h4><table class="kv">${(d.events||[]).slice(0,40).map(e=>`<tr><td>${esc((e.at||"").slice(5,16).replace("T"," "))}</td><td>${esc(e.kind)} ${esc(e.stage||"")} ${esc(e.status||"")} ${e.approved===true?"duyệt":e.approved===false?"từ chối":""} ${esc(e.note||e.message||"")}</td></tr>`).join("")}</table>`;
+  h += `<h4>Lưu trữ job</h4><div class="small mut">Chuyển thư mục job vào <code>jobs/.trash/</code> (khôi phục được). Gõ tên job để xác nhận.</div><div class="btns"><input type="text" id="arch" placeholder="${esc(d.job)}"><button class="danger" onclick="archiveJob()">Lưu trữ</button></div>`;
+  return h;
+}
+function voiceOptions(cur){ const v = (S.overview && S.overview.voices) || {baotrang:"Bảo Trang"}; return Object.entries(v).map(([id,name])=>`<option value="${esc(id)}" ${cur===id?"selected":""}>${esc(name)}</option>`).join(""); }
+function saveJob(){
+  const gates = []; if($("#cf_gread").checked) gates.push("read"); if($("#cf_gwrite").checked) gates.push("write");
+  act("config", {voice:$("#cf_voice").value, revise_rounds:Number($("#cf_rev").value), watermark:$("#cf_wm").value, background_volume:Number($("#cf_bg").value), subtitles:$("#cf_sub").checked, gates}, "Đã lưu cài đặt");
+}
+async function archiveJob(){ const r = await act("archive", {confirm:$("#arch").value.trim()}); if(r){ toast("Đã lưu trữ vào "+r.archived); location.hash = ""; } }
+function sideLog(){
+  const d = S.detail, runs = d.runs || [];
+  const cur = S.logRun || (d.run && d.run.id) || (runs[0] && runs[0].id) || "";
+  return `<h3>Log ${d.running?chip("running"):""}</h3><div class="btns" style="margin-top:0"><select id="runsel">${runs.map(r=>`<option value="${esc(r.id)}" ${r.id===cur?"selected":""}>${esc(r.id)} · ${esc(STATUS_VI[r.status]||r.status)}</option>`).join("")}</select>${d.running?`<button class="danger" onclick="$('#stopbtn').click()">Dừng</button>`:""}<label class="small"><input type="checkbox" id="follow" checked> tự cuộn</label></div><pre class="log" id="logpre">${esc(S.log.text)}</pre>`;
+}
+async function pollLog(){
+  if(!S.job || !S.detail) return;
+  const d = S.detail, run = S.logRun || (d.run && d.run.id) || (d.runs[0] && d.runs[0].id);
+  if(!run){ if(S.tab==="log") $("#sbody").innerHTML = `<div class="empty">Chưa có run nào. Bấm "Chạy tiếp".</div>`; return; }
+  if(S.log.run !== run) S.log = {run, offset:0, text:""};
+  try {
+    const r = await api(`/api/jobs/${encodeURIComponent(S.job)}/log?run=${encodeURIComponent(run)}&offset=${S.log.offset}`);
+    S.log.text = (S.log.text + r.text).slice(-400000); S.log.offset = r.offset;
+  } catch(e) {}
+  if(S.tab!=="log") return;
+  if(!$("#logpre")) { $("#sbody").innerHTML = sideLog(); bindSide(); }
+  const pre = $("#logpre"); if(!pre) return;
+  pre.textContent = S.log.text;
+  if(!$("#follow") || $("#follow").checked) pre.scrollTop = pre.scrollHeight;
+}
+function bindSide(){
+  document.querySelectorAll("#sbody [data-open]").forEach(el => el.onclick = () => openFile(el.dataset.open, el.dataset.kind));
+  const rs = $("#runsel"); if(rs) rs.onchange = () => { S.logRun = rs.value; S.log = {run:null,offset:0,text:""}; pollLog(); };
+}
+
+// ---------- modal ----------
+function modal(title, body, foot){ $("#mtitle").textContent = title; $("#mbody").innerHTML = body; $("#mfoot").innerHTML = foot || ""; $("#modal").style.display = "flex"; }
+function closeModal(){ $("#modal").style.display = "none"; $("#mbody").innerHTML = ""; }
+$("#mclose").onclick = closeModal; $("#modal").onclick = e => { if(e.target.id==="modal") closeModal(); };
+document.addEventListener("keydown", e => { if(e.key==="Escape") closeModal(); });
+async function openFile(path, kind){
+  const url = fileUrl(path), foot = `<a href="${url}" target="_blank" rel="noopener">Mở tab mới</a><span class="sp"></span><span class="mut small mono">${esc(path)}</span>`;
+  if(kind==="image") return modal(path, `<img class="full" src="${url}" alt="">`, foot);
+  if(kind==="media") return modal(path, /\.(wav|mp3|m4a)$/i.test(path) ? `<audio controls src="${url}"></audio>` : `<video controls src="${url}"></video>`, foot);
+  try {
+    const r = await fetch(url); let t = await r.text();
+    if(/\.json$/i.test(path)) { try { t = JSON.stringify(JSON.parse(t), null, 2); } catch(e) {} }
+    if(t.length > 400000) t = t.slice(0, 400000) + "\n... (cắt bớt)";
+    modal(path, `<pre class="doc">${esc(t)}</pre>`, foot);
+  } catch(e) { toast(e.message, true); }
+}
+function newJob(){
+  modal("Job mới", `<label class="field"><span>Tên job (chữ thường, số, - _)</span><input type="text" id="nj_name" placeholder="ga-kim-thoa-ep02"></label>
+    <label class="field"><span>Tiêu đề</span><input type="text" id="nj_title" placeholder="Gả Kim Thoa - Tập 2"></label>
+    <label class="field"><span>Đường dẫn video trên máy chạy harness</span><input type="text" id="nj_video" placeholder="/home/ban/Videos/phim.mp4"></label>
+    <div class="btns" style="margin-top:0"><button onclick="browse()">Duyệt thư mục...</button></div><div class="browse" id="nj_browse"></div>
+    <div class="grid2"><label class="field"><span>Giọng</span><select id="nj_voice">${voiceOptions("baotrang")}</select></label>
+    <label class="field"><span>READ</span><select id="nj_read"><option value="">(mặc định cấu hình)</option><option>agy</option><option>claude</option><option>codex</option><option>manual</option></select></label>
+    <label class="field"><span>WRITE</span><select id="nj_write"><option value="">(mặc định cấu hình)</option><option>claude</option><option>agy</option><option>codex</option><option>manual</option></select></label></div>
+    <label class="small"><input type="checkbox" id="nj_start" checked> Chạy luôn Probe + READ (dừng ở cổng duyệt READ)</label>`,
+    `<span class="sp"></span><button onclick="closeModal()">Huỷ</button><button class="pri" onclick="createJob()">Tạo job</button>`);
+}
+$("#newjob").onclick = newJob;
+async function browse(dir){
+  try {
+    const r = await api("/api/browse" + (dir ? "?dir="+encodeURIComponent(dir) : ""));
+    $("#nj_browse").innerHTML = `<div class="mut small">${esc(r.dir || "Thư mục được phép (HARNESS_MEDIA_DIRS)")}</div>` + (r.parent ? `<div data-dir="${esc(r.parent)}">.. (lên)</div>` : "") + r.dirs.map(p=>`<div data-dir="${esc(p)}">${esc(p.split("/").pop()||p)}/</div>`).join("") + r.videos.map(v=>`<div data-video="${esc(v.path)}"><b>${esc(v.name)}</b> <span class="mut">${fmtB(v.size)}</span></div>`).join("");
+    $("#nj_browse").querySelectorAll("[data-dir]").forEach(el => el.onclick = () => browse(el.dataset.dir));
+    $("#nj_browse").querySelectorAll("[data-video]").forEach(el => el.onclick = () => { $("#nj_video").value = el.dataset.video; if(!$("#nj_name").value){ $("#nj_name").value = el.dataset.video.split("/").pop().replace(/\.[^.]+$/,"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/đ/g,"d").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,60); } });
+  } catch(e) { toast(e.message, true); }
+}
+async function createJob(){
+  const body = {job:$("#nj_name").value.trim(), title:$("#nj_title").value.trim(), video:$("#nj_video").value.trim(), voice:$("#nj_voice").value, read_engine:$("#nj_read").value, write_engine:$("#nj_write").value, start:$("#nj_start").checked};
+  try { const r = await api("/api/jobs", body); closeModal(); toast("Đã tạo job "+r.job); location.hash = "#/job/"+r.job; } catch(e) { toast(e.message, true); }
+}
+$("#sysbtn").onclick = async () => {
+  modal("Kiểm tra môi trường", `<div class="mut">Đang kiểm tra...</div>`);
+  try { const r = await api("/api/doctor"); $("#mbody").innerHTML = `<table class="kv">${r.checks.map(c=>`<tr><td>${c.ok?'<b style="color:var(--done)">OK</b>':'<b style="color:var(--fail)">THIẾU</b>'} ${esc(c.name)}</td><td class="mono">${esc(c.detail)}</td></tr>`).join("")}</table><p class="small mut">Thiếu gì thì chạy <code>./setup.sh</code> trên máy này.</p>`; }
+  catch(e) { $("#mbody").innerHTML = `<div class="box err">${esc(e.message)}</div>`; }
+};
+route();
+</script>
+</body>
+</html>

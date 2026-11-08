@@ -1,0 +1,5 @@
+# Optional extras: ./setup.sh --with-optional
+# Edge-TTS: cloud voices (needs Internet), only when tts.provider: edge.
+edge-tts==7.2.8
+# Whisper transcript for READ (read.transcript: whisper).
+faster-whisper==1.2.1

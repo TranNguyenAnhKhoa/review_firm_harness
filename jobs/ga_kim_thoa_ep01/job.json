@@ -1,0 +1,13 @@
+{
+  "job": "ga_kim_thoa_ep01",
+  "title": "Gả Kim Thoa - Tập 1",
+  "created": "2026-10-25T15:12:15+00:00",
+  "harness_version": "1.x (Windows)",
+  "source": {
+    "path": "media/ga_kim_thoa_ep01.mp4",
+    "name": "ga_kim_thoa_ep01.mp4",
+    "size": 924668949,
+    "mtime_ns": null
+  },
+  "migrated": "Từ bản Windows: timeline.md do Antigravity Desktop viết, review.json 65 segment. Đặt video vào media/ga_kim_thoa_ep01.mp4 rồi chạy."
+}

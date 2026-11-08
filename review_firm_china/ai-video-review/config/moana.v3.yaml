@@ -1,7 +1,0 @@
-# Guard against silently extending insufficient picture ranges with a freeze frame.
-video:
-  duration_matching:
-    enabled: true
-    min_speed: 0.90
-    max_speed: 1.10
-    fallback: error
