@@ -197,6 +197,10 @@ WRITE. Timeline cũ chỉ có 10 dòng cho 48 phút và không có bảng shot, 
 - Số giây do TTS đo và file đã dựng là căn cứ cuối. Harness không đệm im lặng hay đọc chậm để đủ tỷ lệ.
 - Câu đùa và nhận xét vẫn cần người xem lại: code chỉ kiểm tra cấu trúc và thời lượng.
 
+## Việc cần cải tiến
+
+Danh sách đã xếp thứ tự, có căn cứ và ước lượng thời gian: [docs/ROADMAP.md](docs/ROADMAP.md).
+
 ## Phát triển
 
 ```bash
